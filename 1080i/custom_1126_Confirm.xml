@@ -56,10 +56,9 @@
                 <top>98</top>
                 <width>825</width>
                 <height>282</height>
-				<align>center</align>
                 <label>$VAR[CustomConfirmTextboxVar]</label>
                 <textcolor>grey2</textcolor>
-                <autoscroll time="3333" delay="4000" repeat="5000">true</autoscroll>
+                <autoscroll time="0" delay="4000" repeat="5000">true</autoscroll>
             </control>
             <control type="grouplist" id="90100">
                 <left>30</left>
@@ -72,7 +71,7 @@
                     <label>$VAR[CustomConfirmYesLabelVar]</label>
                     <font>font15_title</font>
                     <textcolor>grey2</textcolor>
-                    <focusedcolor>FF32CD32</focusedcolor>
+                    <focusedcolor>$VAR[HighlightBarColor]</focusedcolor>
                     <align>center</align>
                     <onleft/>
                     <onright/>
@@ -95,7 +94,7 @@
                     <onclick condition="!String.IsEmpty(Window(Home).Property(AskDefaultBackground))">SetProperty(CustomSelectDefaultBackground,True,Home)</onclick>
                     <onclick condition="!String.IsEmpty(Window(Home).Property(AskDefaultBackground))">ActivateWindow(1129)</onclick>
                     <texturenofocus colordiffuse="-" border="5">dialogs/default/inner/inner2.png</texturenofocus>
-                    <texturefocus colordiffuse="FF32CD32" border="5">dialogs/default/inner/inner.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[HighlightBarColor]" border="5">dialogs/default/inner/inner.png</texturefocus>
                     <visible>String.IsEmpty(Window(Home).Property(Notify))</visible>
                 </control>
                 <control type="button" id="901002">
@@ -106,7 +105,7 @@
                     <label>$VAR[CustomConfirmNoLabelVar]</label>
                     <font>font15_title</font>
                     <textcolor>grey2</textcolor>
-                    <focusedcolor>red</focusedcolor>
+                    <focusedcolor>$VAR[HighlightBarColor]</focusedcolor>
                     <align>center</align>
                     <onleft/>
                     <onright/>
@@ -116,7 +115,7 @@
                     <onclick condition="!String.IsEmpty(Window(Home).Property(MissingDependency))">ActivateWindow(interfacesettings)</onclick>
                     <onclick condition="!String.IsEmpty(Window(Home).Property(AskDefaultBackground))">Skin.SetBool(AskedDefaultBackground)</onclick>
                     <texturenofocus colordiffuse="-" border="5">dialogs/default/inner/inner2.png</texturenofocus>
-                    <texturefocus colordiffuse="red" border="5">dialogs/default/inner/inner.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[HighlightBarColor]" border="5">dialogs/default/inner/inner.png</texturefocus>
                     <visible>String.IsEmpty(Window(Home).Property(Notify))</visible>
                 </control>
                 <control type="button" id="901003">

@@ -59,9 +59,8 @@
                 <width>825</width>
                 <height>290</height>
                 <label/>
-				<align>center</align>
                 <textcolor>grey2</textcolor>
-                <autoscroll time="3333" delay="4000" repeat="5000">true</autoscroll>
+                <autoscroll time="0" delay="4000" repeat="5000">true</autoscroll>
             </control>
             <control type="grouplist" id="9000">
                 <left>20</left>
@@ -77,10 +76,10 @@
                     <label>107</label>
                     <font>font15_title</font>
                     <textcolor>grey2</textcolor>
-                    <focusedcolor>FF32CD32</focusedcolor>
+                    <focusedcolor>$VAR[HighlightBarColor]</focusedcolor>
                     <align>center</align>
                     <texturenofocus border="5">dialogs/default/inner/inner2.png</texturenofocus>
-                    <texturefocus colordiffuse="FF32CD32" border="5">dialogs/default/inner/inner.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[HighlightBarColor]" border="5">dialogs/default/inner/inner.png</texturefocus>
                 </control>
                 <control type="button" id="10">
                     <description>No button</description>

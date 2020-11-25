@@ -124,7 +124,7 @@
                             <height>60</height>
                             <texture colordiffuse="$VAR[HighlightBarColor]" border="5">listselect_fo.png</texture>
                             <visible>Control.HasFocus(3)</visible>
-                            <!-- <include>VisibleFadeAnimation</include> -->
+                            <include>VisibleFadeAnimation</include>
                         </control>
                         <control type="label">
                             <width>980</width>
@@ -174,7 +174,7 @@
                             <height>60</height>
                             <texture colordiffuse="$VAR[HighlightBarColor]" border="5">listselect_fo.png</texture>
                             <visible>Control.HasFocus(3)</visible>
-                            <!-- <include>VisibleFadeAnimation</include> -->
+                            <include>VisibleFadeAnimation</include>
                         </control>
                         <control type="label">
                             <width>780</width>
@@ -237,7 +237,7 @@
                             <height>55</height>
                             <texture colordiffuse="$VAR[HighlightBarColor]" border="5">listselect_fo.png</texture>
                             <visible>Control.HasFocus(6)</visible>
-                            <!-- <include>VisibleFadeAnimation</include> -->
+                            <include>VisibleFadeAnimation</include>
                         </control>
                         <control type="label">
                             <width>1030</width>
@@ -944,14 +944,14 @@
             <onclick>Skin.SetPath(CustomDefaultBackground.path)</onclick>
         </item>
         <item>
-            <label>ftp ustaw pojedyncze tlocc</label>
+            <label>ftp ustaw pojedyncze tlo</label>
             <onclick>Dialog.Close(1129)</onclick>
-            <onclick>Skin.SetImage(CustomDefaultBackground.path,https://polishteam.ru/FTP/kim/Tapety/)</onclick>
+            <onclick>Skin.SetImage(CustomDefaultBackground.path,http://kim.cherrytv.webd.pl/Tapety/,.jpg)</onclick>
         </item>
         <item>
-            <label>ftp ustaw wiele obrazow tlacv</label>
+            <label>ftp ustaw wiele obrazow tla</label>
             <onclick>Dialog.Close(1129)</onclick>
-            <onclick>Skin.SetPath(CustomDefaultBackground.path,https://polishteam.ru/FTP/kim/Tapety)</onclick>
+            <onclick>Skin.SetPath(CustomDefaultBackground.path,http://kim.cherrytv.webd.pl/Tapety/,.jpg)</onclick>
         </item>
     </include>
     <include name="SelectMusicVizBackground">
@@ -1175,6 +1175,7 @@
 		<onclick>Skin.SetString(ThemeHomeMenuColor5,FF1700F0)</onclick>
 		<onclick>Skin.SetString(RSSFeedColor,B3635FBC)</onclick>
 		<onclick>RunScript(special://skin/scripts/color/Defaults.py)</onclick>
+		<onclick>Skin.Reset(Widget.Trans)</onclick>
     </include>
     <include name="SetPresetOrangeTheme">
         <include>ResetSkinColorsOnclick</include>
@@ -1206,21 +1207,21 @@
         <onclick>Skin.SetString(UnfocusedMainMenuColor,66919191)</onclick>
 		<onclick>Skin.SetString(FocusedMainMenuIconLabelColor,66FFFFFF)</onclick>
         <onclick>Skin.SetString(UnFocusedMainMenuIconLabelColor,66919191)</onclick>
-        <onclick>Skin.SetString(HighlightBarColor,4DB8B8B8)</onclick>
-        <onclick>Skin.SetString(ThemeHomeSystemBarsColor,66767676)</onclick>
+        <onclick>Skin.SetString(HighlightBarColor,66B8B8B8)</onclick>
+        <onclick>Skin.SetString(ThemeHomeSystemBarsColor,26767676)</onclick>
         <onclick>Skin.SetString(WidgetHighlightBarColor,66767676)</onclick>
 	    <onclick>Skin.SetString(FocusedSubMenuColor,66FFFFFF)</onclick>
         <onclick>Skin.SetString(UnfocusedSubMenuColor,66919191)</onclick>
         <onclick>Skin.SetString(WidgetBackgroundColor,66636363)</onclick>
 		<onclick>Skin.SetString(ThemeHomeLabelColor,669C9C9C)</onclick>
         <onclick>Skin.SetString(UnWatchedEpColor,666D6D6D)</onclick>
-		<onclick>Skin.SetString(TopBarColor,66767676)</onclick>
-		<onclick>Skin.SetString(ThemePanelBgColor,C4767676)</onclick>
-		<onclick>Skin.SetString(ThemePanelColor,C4515151)</onclick>
+		<onclick>Skin.SetString(TopBarColor,26767676)</onclick>
+		<onclick>Skin.SetString(ThemePanelBgColor,E6767676)</onclick>
+		<onclick>Skin.SetString(ThemePanelColor,CC515151)</onclick>
 		<onclick>Skin.SetString(ThemeHomeMenuGlowBarColor,66515151)</onclick>
 		<onclick>Skin.SetString(ThemeGlobalBackgroundColor,666E6E6E)</onclick>
-		<onclick>Skin.SetString(ThemeAudioOSDColorFo,66D1D1D1)</onclick>
-		<onclick>Skin.SetString(ThemeAudioOSDColorNoFo,668E8E8E)</onclick>
+		<onclick>Skin.SetString(ThemeAudioOSDColorFo,CCD1D1D1)</onclick>
+		<onclick>Skin.SetString(ThemeAudioOSDColorNoFo,B38E8E8E)</onclick>
 		<onclick>Skin.SetString(AVButtonColorNoFo,668E8E8E)</onclick>
 		<onclick>Skin.SetString(AVButtonColorFo,BFDDF9EC)</onclick>
 		<onclick>Skin.SetString(ThemeLabelColorProgres,668E8E8E)</onclick>
@@ -1234,6 +1235,8 @@
 		<onclick>Skin.SetString(ThemeHomeMenuColor5,669E9E9E)</onclick>
 		<onclick>Skin.SetString(RSSFeedColor,66BEBEBE)</onclick>
 		<onclick>RunScript(special://skin/scripts/color/Transparent.py)</onclick>
+		<onclick>Skin.SetString(Widget.Trans,50)</onclick>
+			
     </include>
     <include name="ResetSkinColorsOnclick">
         <onclick>Skin.Reset(ThemeHomeMenuBarColor)</onclick>
@@ -1269,6 +1272,7 @@
         <onclick>Skin.Reset(ThemeOSDCacheColor)</onclick>
         <onclick>Skin.Reset(ThemeOSDProgressColor)</onclick>
         <onclick>Skin.Reset(RSSFeedColor)</onclick>
-		<onclick>RunScript(special://skin/scripts/color/Gefaults.py)</onclick>
+		<onclick>RunScript(special://skin/scripts/color/Defaults.py)</onclick>
+		<onclick>Skin.Reset(Widget.Trans)</onclick>
     </include>
 </includes>

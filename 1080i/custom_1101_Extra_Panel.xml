@@ -323,6 +323,15 @@
                 <righttexture colordiffuse="-" border="0">media/</righttexture>
                 <info>System.FreeSpace</info>
             </control>
+            <!--
+                    <control type="image">
+                        <description>HDD pic.</description>
+                        <left>45</left>
+                        <top>740</top>
+                        <width>27</width>
+                        <height>40</height>
+                        <texture>media/hdd.png</texture>
+                    </control> -->
             <control type="image">
                 <description>HDD pic.</description>
                 <left>50</left>
@@ -871,6 +880,9 @@
                     <alttexture/>
                 </control>
             </control>
+        </control>
+        <control type="group">
+            <include>background_black</include>
         </control>
     </controls>
 </window>

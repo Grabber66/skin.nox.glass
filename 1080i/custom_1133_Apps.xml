@@ -77,7 +77,7 @@
                             <height>120</height>
                             <texture colordiffuse="$VAR[HighlightBarColor]" border="4">listselect_fo.png</texture>
                             <visible>Control.HasFocus(50)</visible>
-                            <!-- <include>VisibleFadeAnimation</include> -->
+                            <include>VisibleFadeAnimation</include>
                         </control>
                         <control type="image">
                             <left>15</left>
@@ -181,7 +181,7 @@
                     </content>
                 </control>
                 <control type="scrollbar" id="60">
-                    <left>810</left>
+                    <left>740</left>
                     <top>180</top>
                     <width>14</width>
                     <height>840</height>
@@ -272,7 +272,7 @@
                             <height>120</height>
                             <texture colordiffuse="$VAR[HighlightBarColor]" border="4">listselect_fo.png</texture>
                             <visible>Control.HasFocus(51)</visible>
-                            <!-- <include>VisibleFadeAnimation</include> -->
+                            <include>VisibleFadeAnimation</include>
                         </control>
                         <control type="image">
                             <left>15</left>
@@ -338,7 +338,7 @@
         <include>Topbar</include>
         <control type="group">
             <visible>!Skin.HasSetting(Disable.TopBar) + !Window.IsActive(volumebar)</visible>
-            <!-- <include>VisibleFadeAnimation</include> -->
+            <include>VisibleFadeAnimation</include>
             <animation effect="slide" start="0,-90" end="0,0" time="0">WindowOpen</animation>
             <animation effect="slide" end="0,-90" start="0,0" time="0">WindowClose</animation>
             <control type="grouplist">

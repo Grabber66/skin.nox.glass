@@ -1,63 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <fonts>
     <fontset id="Default" idloc="31390">
-        <!-- FONT MTVGUIDE TEST TRUE -->
-        <font>
-            <name>mtvguide_programlst_font12</name>
-            <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
-            <size>25</size>
-            <style>lighten</style>
-        </font>
+	<!-- FONT MTVGUIDE TEST TRUE -->
+		<font>
+			<name>mtvguide_programlst_font12</name>
+			<filename>fontmtvguide/NotoSans-Regular.ttf</filename>
+			<size>25</size>
+			<style>lighten</style>
+		</font>
         <font>
             <name>mtvguide_textbox_font12</name><!-- textbox video + [actor's DialogInfo] -->
             <filename>fontmtvguide/NotoSans-Bold.ttf</filename>
             <linespacing>1.1</linespacing>
             <size>21</size>
         </font>
-        <font>
+		<font>
             <name>mtvguide_textbox_font23</name><!-- button's -->
             <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
             <size>23</size>
         </font>
-        <font>
+		<font>
             <name>mtvguide_textbox_font13</name><!-- dialoginfo textbox only plot -->
             <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
             <size>27</size>
         </font>
-        <font>
+		<font>
             <name>mtvguide_clockandmore_font</name><!-- textbox video + [actor's DialogInfo] -->
             <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
             <linespacing>1.1</linespacing>
             <size>31</size>
         </font>
-        <font>
-            <name>mtvguide_ch_namefont45</name>
-            <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
-            <size>45</size>
-            <style>lighten</style>
-        </font>
-        <font>
+		<font>
+			<name>mtvguide_ch_namefont45</name>
+			<filename>fontmtvguide/NotoSans-Regular.ttf</filename>
+			<size>45</size>
+			<style>lighten</style>
+		</font>
+		<font>
             <name>mtvguide_font_title</name>
             <filename>fontmtvguide/MC360.ttf</filename>
-            <aspect>0.7</aspect>
+			<aspect>0.7</aspect>
             <linespacing>0.5</linespacing>
-            <style>bold</style>
+			<style>bold</style>
             <size>50</size>
         </font>
-        <font>
+		<font>
             <name>mtvguide_clock_title</name>
             <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
-            <aspect>0.7</aspect>
+			<aspect>0.7</aspect>
             <linespacing>0.5</linespacing>
-            <style>bold</style>
+			<style>bold</style>
             <size>60</size>
         </font>
-        <font>
+		<font>
             <name>mtvguide_channel_title</name>
             <filename>fontmtvguide/NotoSans-Bold.ttf</filename>
-            <aspect>0.7</aspect>
+			<aspect>0.7</aspect>
             <linespacing>0.5</linespacing>
-            <style>bold</style>
+			<style>bold</style>
             <size>100</size>
         </font>
 <!-- FONT MTVGUIDE TEST TRUE -->
@@ -130,16 +130,6 @@
             <linespacing>1.0</linespacing>
         </font>
         <!-- 5 MainMenu -->
-        <!-- dialogpvrinfotitle -->
-        <font>
-            <name>dialogpvrinfotitle</name>
-            <filename>moja/DejaVuSerif.ttf</filename>
-            <style>bold</style>
-            <aspect>0.8</aspect>
-            <size>50</size>
-            <linespacing>1.0</linespacing>
-        </font>
-        <!-- pvrgudetitle -->
         <font>
             <name>Lirabiefont_Rg35</name>
             <filename>moja/larabiefont_rg.ttf</filename>
@@ -485,63 +475,63 @@
         </font>
     </fontset>
     <fontset id="Arial" idloc="31391" unicode="true">
-    <!-- FONT MTVGUIDE TEST TRUE -->
-        <font>
-            <name>mtvguide_programlst_font12</name>
-            <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
-            <size>25</size>
-            <style>lighten</style>
-        </font>
+	<!-- FONT MTVGUIDE TEST TRUE -->
+		<font>
+			<name>mtvguide_programlst_font12</name>
+			<filename>fontmtvguide/NotoSans-Regular.ttf</filename>
+			<size>25</size>
+			<style>lighten</style>
+		</font>
         <font>
             <name>mtvguide_textbox_font12</name><!-- textbox video + [actor's DialogInfo] -->
             <filename>fontmtvguide/NotoSans-Bold.ttf</filename>
             <linespacing>1.1</linespacing>
             <size>21</size>
         </font>
-        <font>
+		<font>
             <name>mtvguide_textbox_font23</name><!-- button's -->
             <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
             <size>23</size>
         </font>
-        <font>
+		<font>
             <name>mtvguide_textbox_font13</name><!-- dialoginfo textbox only plot -->
             <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
             <size>27</size>
         </font>
-        <font>
+		<font>
             <name>mtvguide_clockandmore_font</name><!-- textbox video + [actor's DialogInfo] -->
             <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
             <linespacing>1.1</linespacing>
             <size>31</size>
         </font>
-        <font>
-            <name>mtvguide_ch_namefont45</name>
-            <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
-            <size>45</size>
-            <style>lighten</style>
-        </font>
-        <font>
+		<font>
+			<name>mtvguide_ch_namefont45</name>
+			<filename>fontmtvguide/NotoSans-Regular.ttf</filename>
+			<size>45</size>
+			<style>lighten</style>
+		</font>
+		<font>
             <name>mtvguide_font_title</name>
             <filename>fontmtvguide/MC360.ttf</filename>
-            <aspect>0.7</aspect>
+			<aspect>0.7</aspect>
             <linespacing>0.5</linespacing>
-            <style>bold</style>
+			<style>bold</style>
             <size>50</size>
         </font>
-        <font>
+		<font>
             <name>mtvguide_clock_title</name>
             <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
-            <aspect>0.7</aspect>
+			<aspect>0.7</aspect>
             <linespacing>0.5</linespacing>
-            <style>bold</style>
+			<style>bold</style>
             <size>60</size>
         </font>
-        <font>
+		<font>
             <name>mtvguide_channel_title</name>
             <filename>fontmtvguide/NotoSans-Bold.ttf</filename>
-            <aspect>0.7</aspect>
+			<aspect>0.7</aspect>
             <linespacing>0.5</linespacing>
-            <style>bold</style>
+			<style>bold</style>
             <size>100</size>
         </font>
 <!-- FONT MTVGUIDE TEST TRUE -->
@@ -844,16 +834,6 @@
             <size>70</size>
         </font>
         <!-- 1 MainMenu -->
-        <!-- dialogpvrinfotitle -->
-        <font>
-            <name>dialogpvrinfotitle</name>
-            <filename>arial.ttf</filename>
-            <style>bold</style>
-            <aspect>0.8</aspect>
-            <size>50</size>
-            <linespacing>1.0</linespacing>
-        </font>
-        <!-- pvrgudetitle -->
         <font>
             <name>font_VerticalMainMenu</name>
             <filename>arial.ttf</filename>
@@ -888,63 +868,63 @@
         </font>
     </fontset>
     <fontset id="NoTo" idloc="31964">
-    <!-- FONT MTVGUIDE TEST TRUE -->
-        <font>
-            <name>mtvguide_programlst_font12</name>
-            <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
-            <size>25</size>
-            <style>lighten</style>
-        </font>
+	<!-- FONT MTVGUIDE TEST TRUE -->
+		<font>
+			<name>mtvguide_programlst_font12</name>
+			<filename>fontmtvguide/NotoSans-Regular.ttf</filename>
+			<size>25</size>
+			<style>lighten</style>
+		</font>
         <font>
             <name>mtvguide_textbox_font12</name><!-- textbox video + [actor's DialogInfo] -->
             <filename>fontmtvguide/NotoSans-Bold.ttf</filename>
             <linespacing>1.1</linespacing>
             <size>21</size>
         </font>
-        <font>
+		<font>
             <name>mtvguide_textbox_font23</name><!-- button's -->
             <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
             <size>23</size>
         </font>
-        <font>
+		<font>
             <name>mtvguide_textbox_font13</name><!-- dialoginfo textbox only plot -->
             <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
             <size>27</size>
         </font>
-        <font>
+		<font>
             <name>mtvguide_clockandmore_font</name><!-- textbox video + [actor's DialogInfo] -->
             <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
             <linespacing>1.1</linespacing>
             <size>31</size>
         </font>
-        <font>
-            <name>mtvguide_ch_namefont45</name>
-            <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
-            <size>45</size>
-            <style>lighten</style>
-        </font>
-        <font>
+		<font>
+			<name>mtvguide_ch_namefont45</name>
+			<filename>fontmtvguide/NotoSans-Regular.ttf</filename>
+			<size>45</size>
+			<style>lighten</style>
+		</font>
+		<font>
             <name>mtvguide_font_title</name>
             <filename>fontmtvguide/MC360.ttf</filename>
-            <aspect>0.7</aspect>
+			<aspect>0.7</aspect>
             <linespacing>0.5</linespacing>
-            <style>bold</style>
+			<style>bold</style>
             <size>50</size>
         </font>
-        <font>
+		<font>
             <name>mtvguide_clock_title</name>
             <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
-            <aspect>0.7</aspect>
+			<aspect>0.7</aspect>
             <linespacing>0.5</linespacing>
-            <style>bold</style>
+			<style>bold</style>
             <size>60</size>
         </font>
-        <font>
+		<font>
             <name>mtvguide_channel_title</name>
             <filename>fontmtvguide/NotoSans-Bold.ttf</filename>
-            <aspect>0.7</aspect>
+			<aspect>0.7</aspect>
             <linespacing>0.5</linespacing>
-            <style>bold</style>
+			<style>bold</style>
             <size>100</size>
         </font>
 <!-- FONT MTVGUIDE TEST TRUE -->
@@ -1222,16 +1202,6 @@
             <size>68</size>
         </font>
         <!-- MainMenu Font -->
-        <!-- dialogpvrinfotitle -->
-        <font>
-            <name>dialogpvrinfotitle</name>
-            <filename>NotoSans-Regular.ttf</filename>
-            <style>bold</style>
-            <aspect>0.8</aspect>
-            <size>50</size>
-            <linespacing>1.0</linespacing>
-        </font>
-        <!-- pvrgudetitle -->
         <font>
             <name>font_VerticalMainMenu</name>
             <filename>NotoSans-Regular.ttf</filename>
@@ -1272,63 +1242,63 @@
         </font>
     </fontset>
     <fontset id="Raleway" idloc="31223">
-    <!-- FONT MTVGUIDE TEST TRUE -->
-        <font>
-            <name>mtvguide_programlst_font12</name>
-            <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
-            <size>25</size>
-            <style>lighten</style>
-        </font>
+	<!-- FONT MTVGUIDE TEST TRUE -->
+		<font>
+			<name>mtvguide_programlst_font12</name>
+			<filename>fontmtvguide/NotoSans-Regular.ttf</filename>
+			<size>25</size>
+			<style>lighten</style>
+		</font>
         <font>
             <name>mtvguide_textbox_font12</name><!-- textbox video + [actor's DialogInfo] -->
             <filename>fontmtvguide/NotoSans-Bold.ttf</filename>
             <linespacing>1.1</linespacing>
             <size>21</size>
         </font>
-        <font>
+		<font>
             <name>mtvguide_textbox_font23</name><!-- button's -->
             <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
             <size>23</size>
         </font>
-        <font>
+		<font>
             <name>mtvguide_textbox_font13</name><!-- dialoginfo textbox only plot -->
             <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
             <size>27</size>
         </font>
-        <font>
+		<font>
             <name>mtvguide_clockandmore_font</name><!-- textbox video + [actor's DialogInfo] -->
             <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
             <linespacing>1.1</linespacing>
             <size>31</size>
         </font>
-        <font>
-            <name>mtvguide_ch_namefont45</name>
-            <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
-            <size>45</size>
-            <style>lighten</style>
-        </font>
-        <font>
+		<font>
+			<name>mtvguide_ch_namefont45</name>
+			<filename>fontmtvguide/NotoSans-Regular.ttf</filename>
+			<size>45</size>
+			<style>lighten</style>
+		</font>
+		<font>
             <name>mtvguide_font_title</name>
             <filename>fontmtvguide/MC360.ttf</filename>
-            <aspect>0.7</aspect>
+			<aspect>0.7</aspect>
             <linespacing>0.5</linespacing>
-            <style>bold</style>
+			<style>bold</style>
             <size>50</size>
         </font>
-        <font>
+		<font>
             <name>mtvguide_clock_title</name>
             <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
-            <aspect>0.7</aspect>
+			<aspect>0.7</aspect>
             <linespacing>0.5</linespacing>
-            <style>bold</style>
+			<style>bold</style>
             <size>60</size>
         </font>
-        <font>
+		<font>
             <name>mtvguide_channel_title</name>
             <filename>fontmtvguide/NotoSans-Bold.ttf</filename>
-            <aspect>0.7</aspect>
+			<aspect>0.7</aspect>
             <linespacing>0.5</linespacing>
-            <style>bold</style>
+			<style>bold</style>
             <size>100</size>
         </font>
 <!-- FONT MTVGUIDE TEST TRUE -->
@@ -1606,16 +1576,6 @@
             <size>72</size>
         </font>
         <!-- MainMenu Font -->
-        <!-- dialogpvrinfotitle -->
-        <font>
-            <name>dialogpvrinfotitle</name>
-            <filename>Raleway-Medium.ttf</filename>
-            <style>bold</style>
-            <aspect>0.8</aspect>
-            <size>50</size>
-            <linespacing>1.0</linespacing>
-        </font>
-        <!-- pvrgudetitle -->
         <font>
             <name>font_VerticalMainMenu</name>
             <filename>Raleway-Medium.ttf</filename>
@@ -1656,63 +1616,63 @@
         </font>
     </fontset>
     <fontset id="Ubuntu Condensed" idloc="31481">
-    <!-- FONT MTVGUIDE TEST TRUE -->
-        <font>
-            <name>mtvguide_programlst_font12</name>
-            <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
-            <size>25</size>
-            <style>lighten</style>
-        </font>
+	<!-- FONT MTVGUIDE TEST TRUE -->
+		<font>
+			<name>mtvguide_programlst_font12</name>
+			<filename>fontmtvguide/NotoSans-Regular.ttf</filename>
+			<size>25</size>
+			<style>lighten</style>
+		</font>
         <font>
             <name>mtvguide_textbox_font12</name><!-- textbox video + [actor's DialogInfo] -->
             <filename>fontmtvguide/NotoSans-Bold.ttf</filename>
             <linespacing>1.1</linespacing>
             <size>21</size>
         </font>
-        <font>
+		<font>
             <name>mtvguide_textbox_font23</name><!-- button's -->
             <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
             <size>23</size>
         </font>
-        <font>
+		<font>
             <name>mtvguide_textbox_font13</name><!-- dialoginfo textbox only plot -->
             <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
             <size>27</size>
         </font>
-        <font>
+		<font>
             <name>mtvguide_clockandmore_font</name><!-- textbox video + [actor's DialogInfo] -->
             <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
             <linespacing>1.1</linespacing>
             <size>31</size>
         </font>
-        <font>
-            <name>mtvguide_ch_namefont45</name>
-            <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
-            <size>45</size>
-            <style>lighten</style>
-        </font>
-        <font>
+		<font>
+			<name>mtvguide_ch_namefont45</name>
+			<filename>fontmtvguide/NotoSans-Regular.ttf</filename>
+			<size>45</size>
+			<style>lighten</style>
+		</font>
+		<font>
             <name>mtvguide_font_title</name>
             <filename>fontmtvguide/MC360.ttf</filename>
-            <aspect>0.7</aspect>
+			<aspect>0.7</aspect>
             <linespacing>0.5</linespacing>
-            <style>bold</style>
+			<style>bold</style>
             <size>50</size>
         </font>
-        <font>
+		<font>
             <name>mtvguide_clock_title</name>
             <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
-            <aspect>0.7</aspect>
+			<aspect>0.7</aspect>
             <linespacing>0.5</linespacing>
-            <style>bold</style>
+			<style>bold</style>
             <size>60</size>
         </font>
-        <font>
+		<font>
             <name>mtvguide_channel_title</name>
             <filename>fontmtvguide/NotoSans-Bold.ttf</filename>
-            <aspect>0.7</aspect>
+			<aspect>0.7</aspect>
             <linespacing>0.5</linespacing>
-            <style>bold</style>
+			<style>bold</style>
             <size>100</size>
         </font>
 <!-- FONT MTVGUIDE TEST TRUE -->
@@ -2026,16 +1986,6 @@
             <size>88</size>
         </font>
         <!-- MainMenu Font -->
-        <!-- dialogpvrinfotitle -->
-        <font>
-            <name>dialogpvrinfotitle</name>
-            <filename>UbuntuCondensed-Regular.ttf</filename>
-            <style>bold</style>
-            <aspect>0.8</aspect>
-            <size>50</size>
-            <linespacing>1.0</linespacing>
-        </font>
-        <!-- pvrgudetitle -->
         <font>
             <name>font_VerticalMainMenu</name>
             <filename>BebasNeue.ttf</filename>
@@ -2075,63 +2025,63 @@
         </font>
     </fontset>
     <fontset id="Fira Sans" idloc="31482">
-    <!-- FONT MTVGUIDE TEST TRUE -->
-        <font>
-            <name>mtvguide_programlst_font12</name>
-            <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
-            <size>25</size>
-            <style>lighten</style>
-        </font>
+	<!-- FONT MTVGUIDE TEST TRUE -->
+		<font>
+			<name>mtvguide_programlst_font12</name>
+			<filename>fontmtvguide/NotoSans-Regular.ttf</filename>
+			<size>25</size>
+			<style>lighten</style>
+		</font>
         <font>
             <name>mtvguide_textbox_font12</name><!-- textbox video + [actor's DialogInfo] -->
             <filename>fontmtvguide/NotoSans-Bold.ttf</filename>
             <linespacing>1.1</linespacing>
             <size>21</size>
         </font>
-        <font>
+		<font>
             <name>mtvguide_textbox_font23</name><!-- button's -->
             <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
             <size>23</size>
         </font>
-        <font>
+		<font>
             <name>mtvguide_textbox_font13</name><!-- dialoginfo textbox only plot -->
             <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
             <size>27</size>
         </font>
-        <font>
+		<font>
             <name>mtvguide_clockandmore_font</name><!-- textbox video + [actor's DialogInfo] -->
             <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
             <linespacing>1.1</linespacing>
             <size>31</size>
         </font>
-        <font>
-            <name>mtvguide_ch_namefont45</name>
-            <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
-            <size>45</size>
-            <style>lighten</style>
-        </font>
-        <font>
+		<font>
+			<name>mtvguide_ch_namefont45</name>
+			<filename>fontmtvguide/NotoSans-Regular.ttf</filename>
+			<size>45</size>
+			<style>lighten</style>
+		</font>
+		<font>
             <name>mtvguide_font_title</name>
             <filename>fontmtvguide/MC360.ttf</filename>
-            <aspect>0.7</aspect>
+			<aspect>0.7</aspect>
             <linespacing>0.5</linespacing>
-            <style>bold</style>
+			<style>bold</style>
             <size>50</size>
         </font>
-        <font>
+		<font>
             <name>mtvguide_clock_title</name>
             <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
-            <aspect>0.7</aspect>
+			<aspect>0.7</aspect>
             <linespacing>0.5</linespacing>
-            <style>bold</style>
+			<style>bold</style>
             <size>60</size>
         </font>
-        <font>
+		<font>
             <name>mtvguide_channel_title</name>
             <filename>fontmtvguide/NotoSans-Bold.ttf</filename>
-            <aspect>0.7</aspect>
+			<aspect>0.7</aspect>
             <linespacing>0.5</linespacing>
-            <style>bold</style>
+			<style>bold</style>
             <size>100</size>
         </font>
 <!-- FONT MTVGUIDE TEST TRUE -->
@@ -2410,16 +2360,6 @@
             <size>95</size>
         </font>
         <!-- MainMenu Font -->
-        <!-- dialogpvrinfotitle -->
-        <font>
-            <name>dialogpvrinfotitle</name>
-            <filename>FiraSans-Regular.ttf</filename>
-            <style>bold</style>
-            <aspect>0.8</aspect>
-            <size>50</size>
-            <linespacing>1.0</linespacing>
-        </font>
-        <!-- pvrgudetitle -->
         <font>
             <name>font_VerticalMainMenu</name>
             <filename>FiraSans-Regular.ttf</filename>
@@ -2460,63 +2400,63 @@
         </font>
     </fontset>
     <fontset id="Caviar Dreams" idloc="31483">
-    <!-- FONT MTVGUIDE TEST TRUE -->
-        <font>
-            <name>mtvguide_programlst_font12</name>
-            <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
-            <size>25</size>
-            <style>lighten</style>
-        </font>
+	<!-- FONT MTVGUIDE TEST TRUE -->
+		<font>
+			<name>mtvguide_programlst_font12</name>
+			<filename>fontmtvguide/NotoSans-Regular.ttf</filename>
+			<size>25</size>
+			<style>lighten</style>
+		</font>
         <font>
             <name>mtvguide_textbox_font12</name><!-- textbox video + [actor's DialogInfo] -->
             <filename>fontmtvguide/NotoSans-Bold.ttf</filename>
             <linespacing>1.1</linespacing>
             <size>21</size>
         </font>
-        <font>
+		<font>
             <name>mtvguide_textbox_font23</name><!-- button's -->
             <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
             <size>23</size>
         </font>
-        <font>
+		<font>
             <name>mtvguide_textbox_font13</name><!-- dialoginfo textbox only plot -->
             <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
             <size>27</size>
         </font>
-        <font>
+		<font>
             <name>mtvguide_clockandmore_font</name><!-- textbox video + [actor's DialogInfo] -->
             <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
             <linespacing>1.1</linespacing>
             <size>31</size>
         </font>
-        <font>
-            <name>mtvguide_ch_namefont45</name>
-            <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
-            <size>45</size>
-            <style>lighten</style>
-        </font>
-        <font>
+		<font>
+			<name>mtvguide_ch_namefont45</name>
+			<filename>fontmtvguide/NotoSans-Regular.ttf</filename>
+			<size>45</size>
+			<style>lighten</style>
+		</font>
+		<font>
             <name>mtvguide_font_title</name>
             <filename>fontmtvguide/MC360.ttf</filename>
-            <aspect>0.7</aspect>
+			<aspect>0.7</aspect>
             <linespacing>0.5</linespacing>
-            <style>bold</style>
+			<style>bold</style>
             <size>50</size>
         </font>
-        <font>
+		<font>
             <name>mtvguide_clock_title</name>
             <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
-            <aspect>0.7</aspect>
+			<aspect>0.7</aspect>
             <linespacing>0.5</linespacing>
-            <style>bold</style>
+			<style>bold</style>
             <size>60</size>
         </font>
-        <font>
+		<font>
             <name>mtvguide_channel_title</name>
             <filename>fontmtvguide/NotoSans-Bold.ttf</filename>
-            <aspect>0.7</aspect>
+			<aspect>0.7</aspect>
             <linespacing>0.5</linespacing>
-            <style>bold</style>
+			<style>bold</style>
             <size>100</size>
         </font>
 <!-- FONT MTVGUIDE TEST TRUE -->
@@ -2829,16 +2769,6 @@
             <size>78</size>
         </font>
         <!-- MainMenu Font -->
-        <!-- dialogpvrinfotitle -->
-        <font>
-            <name>dialogpvrinfotitle</name>
-            <filename>CaviarDreams.ttf</filename>
-            <style>bold</style>
-            <aspect>0.8</aspect>
-            <size>50</size>
-            <linespacing>1.0</linespacing>
-        </font>
-        <!-- pvrgudetitle -->
         <font>
             <name>font_VerticalMainMenu</name>
             <filename>BebasNeue.ttf</filename>
@@ -2878,63 +2808,63 @@
         </font>
     </fontset>
     <fontset id="Play Regular" idloc="31484">
-    <!-- FONT MTVGUIDE TEST TRUE -->
-        <font>
-            <name>mtvguide_programlst_font12</name>
-            <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
-            <size>25</size>
-            <style>lighten</style>
-        </font>
+	<!-- FONT MTVGUIDE TEST TRUE -->
+		<font>
+			<name>mtvguide_programlst_font12</name>
+			<filename>fontmtvguide/NotoSans-Regular.ttf</filename>
+			<size>25</size>
+			<style>lighten</style>
+		</font>
         <font>
             <name>mtvguide_textbox_font12</name><!-- textbox video + [actor's DialogInfo] -->
             <filename>fontmtvguide/NotoSans-Bold.ttf</filename>
             <linespacing>1.1</linespacing>
             <size>21</size>
         </font>
-        <font>
+		<font>
             <name>mtvguide_textbox_font23</name><!-- button's -->
             <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
             <size>23</size>
         </font>
-        <font>
+		<font>
             <name>mtvguide_textbox_font13</name><!-- dialoginfo textbox only plot -->
             <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
             <size>27</size>
         </font>
-        <font>
+		<font>
             <name>mtvguide_clockandmore_font</name><!-- textbox video + [actor's DialogInfo] -->
             <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
             <linespacing>1.1</linespacing>
             <size>31</size>
         </font>
-        <font>
-            <name>mtvguide_ch_namefont45</name>
-            <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
-            <size>45</size>
-            <style>lighten</style>
-        </font>
-        <font>
+		<font>
+			<name>mtvguide_ch_namefont45</name>
+			<filename>fontmtvguide/NotoSans-Regular.ttf</filename>
+			<size>45</size>
+			<style>lighten</style>
+		</font>
+		<font>
             <name>mtvguide_font_title</name>
             <filename>fontmtvguide/MC360.ttf</filename>
-            <aspect>0.7</aspect>
+			<aspect>0.7</aspect>
             <linespacing>0.5</linespacing>
-            <style>bold</style>
+			<style>bold</style>
             <size>50</size>
         </font>
-        <font>
+		<font>
             <name>mtvguide_clock_title</name>
             <filename>fontmtvguide/NotoSans-Regular.ttf</filename>
-            <aspect>0.7</aspect>
+			<aspect>0.7</aspect>
             <linespacing>0.5</linespacing>
-            <style>bold</style>
+			<style>bold</style>
             <size>60</size>
         </font>
-        <font>
+		<font>
             <name>mtvguide_channel_title</name>
             <filename>fontmtvguide/NotoSans-Bold.ttf</filename>
-            <aspect>0.7</aspect>
+			<aspect>0.7</aspect>
             <linespacing>0.5</linespacing>
-            <style>bold</style>
+			<style>bold</style>
             <size>100</size>
         </font>
 <!-- FONT MTVGUIDE TEST TRUE -->
@@ -3248,16 +3178,6 @@
             <size>72</size>
         </font>
         <!-- MainMenu Font -->
-        <!-- dialogpvrinfotitle -->
-        <font>
-            <name>dialogpvrinfotitle</name>
-            <filename>play.regular.ttf</filename>
-            <style>bold</style>
-            <aspect>0.8</aspect>
-            <size>50</size>
-            <linespacing>1.0</linespacing>
-        </font>
-        <!-- pvrgudetitle -->
         <font>
             <name>font_VerticalMainMenu</name>
             <filename>BebasNeue.ttf</filename>

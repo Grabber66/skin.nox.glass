@@ -79,7 +79,7 @@
                             <height>60</height>
                             <texture colordiffuse="$VAR[HighlightBarColor]" border="5">listselect_fo.png</texture>
                             <visible>Control.HasFocus(3)</visible>
-                            <!-- <include>VisibleFadeAnimation</include> -->
+                            <include>VisibleFadeAnimation</include>
                         </control>
                         <control type="group">
                             <animation effect="fade" start="100" end="70" time="0" tween="sine" easing="inout" condition="!Control.HasFocus(3)">Conditional</animation>

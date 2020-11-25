@@ -293,7 +293,7 @@
                     <ondown>9000</ondown>
                     <orientation>horizontal</orientation>
                     <visible allowhiddenfocus="true">!Control.HasFocus(64)</visible>
-                    <!-- <include>VisibleFadeAnimation</include> -->
+                    <include>VisibleFadeAnimation</include>
                     <scrolltime tween="quadratic" easing="out">0</scrolltime>
                     <itemlayout height="72" width="598" condition="Integer.IsGreater(Container(300).NumItems,5)">
                         <control type="label">
@@ -312,7 +312,7 @@
                             <height>62</height>
                             <texture colordiffuse="$VAR[HighlightBarColor]" border="4">listselect_fo.png</texture>
                             <visible>Control.HasFocus(300)</visible>
-                            <!-- <include>VisibleFadeAnimation</include> -->
+                            <include>VisibleFadeAnimation</include>
                         </control>
                         <control type="label">
                             <width>598</width>
@@ -340,7 +340,7 @@
                             <height>62</height>
                             <texture colordiffuse="$VAR[HighlightBarColor]" border="4">listselect_fo.png</texture>
                             <visible>Control.HasFocus(300)</visible>
-                            <!-- <include>VisibleFadeAnimation</include> -->
+                            <include>VisibleFadeAnimation</include>
                         </control>
                         <control type="label">
                             <width>1196</width>
@@ -638,7 +638,7 @@
                     <visible>Control.HasFocus(64)</visible>
                     <left>-36</left>
                     <top>172</top>
-                    <!-- <include>VisibleFadeAnimation</include> -->
+                    <include>VisibleFadeAnimation</include>
                     <control type="label">
                         <left>30</left>
                         <top>32</top>
@@ -683,7 +683,7 @@
                     <texturenofocus flipx="true" colordiffuse="grey">arrowright2.png</texturenofocus>
                     <visible>Container(300).HasPrevious</visible>
                     <animation effect="fade" start="100" end="0" time="0" condition="Container(300).OnPrevious">Conditional</animation>
-                    <!-- <include>VisibleFadeAnimation</include> -->
+                    <include>VisibleFadeAnimation</include>
                 </control>
                 <control type="button">
                     <left>1133</left>
@@ -694,7 +694,7 @@
                     <texturenofocus colordiffuse="grey">arrowright2.png</texturenofocus>
                     <visible>Container(300).HasNext</visible>
                     <animation effect="fade" start="100" end="0" time="0" condition="Container(300).OnNext">Conditional</animation>
-                    <!-- <include>VisibleFadeAnimation</include> -->
+                    <include>VisibleFadeAnimation</include>
                 </control>
                 <control type="group">
                     <left>-36</left>
@@ -942,7 +942,7 @@
                             <height>82</height>
                             <texture colordiffuse="$VAR[HighlightBarColor]" border="5">listselect_fo.png</texture>
                             <visible>Control.HasFocus(50)</visible>
-                            <!-- <include>VisibleFadeAnimation</include> -->
+                            <include>VisibleFadeAnimation</include>
                         </control>
                         <control type="label">
                             <width>593</width>

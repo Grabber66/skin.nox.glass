@@ -61,7 +61,7 @@
                     <height>60</height>
                     <texture colordiffuse="$VAR[HighlightBarColor]" border="5">listselect_fo.png</texture>
                     <visible>Control.HasFocus(90100)</visible>
-                    <!-- <include>VisibleFadeAnimation</include> -->
+                    <include>VisibleFadeAnimation</include>
                 </control>
                 <control type="label">
                     <width>628</width>
@@ -91,7 +91,7 @@
                 <item>
                     <label>Ustaw pojedynczy obraz tła : FTP</label>
                     <onclick>Skin.SetString(ItemToEdit.BGType,1)</onclick>
-                    <onclick>Skin.SetImage(ItemToEdit.MultiFanart,https://polishteam.ru/FTP/kim/Tapety/,.jpg)</onclick>
+                    <onclick>Skin.SetImage(ItemToEdit.MultiFanart,http://kim.cherrytv.webd.pl/Tapety/)</onclick>
                     <onclick>Dialog.Close(1122)</onclick>
                 </item>
                 <item>
@@ -103,7 +103,7 @@
                 <item>
                     <label>Ustaw wiele obrazów tła: FTP</label>
                     <onclick>Skin.SetString(ItemToEdit.BGType,2)</onclick>
-                    <onclick>Skin.SetPath(ItemToEdit.MultiFanart,https://polishteam.ru/FTP/kim/Tapety/,.jpg)</onclick>
+                    <onclick>Skin.SetPath(ItemToEdit.MultiFanart,http://kim.cherrytv.webd.pl/Tapety/)</onclick>
                     <onclick>Dialog.Close(1122)</onclick>
                 </item>
                 <item>
@@ -116,7 +116,7 @@
                 <item>
                     <label>$LOCALIZE[31062]: FTP</label>
                     <onclick>Skin.SetString(ItemToEdit.BGType,3)</onclick>
-                    <onclick>Skin.SetString(ItemToEdit.MultiFanart,1,https://polishteam.ru/FTP/kim/Tapety/)</onclick>
+                    <onclick>Skin.SetString(ItemToEdit.MultiFanart,1,http://kim.cherrytv.webd.pl/Tapety/)</onclick>
                     <onclick>Dialog.Close(1122)</onclick>
                     <visible>System.HasAddon(script.grab.fanart) + !String.IsEqual(Window(Home).Property(Nox.Temp),Profiles.Fallback)</visible>
                 </item>
@@ -130,7 +130,7 @@
                 <item>
                     <label>$LOCALIZE[31063]: FTP</label>
                     <onclick>Skin.SetString(ItemToEdit.BGType,3)</onclick>
-                    <onclick>Skin.SetString(ItemToEdit.MultiFanart,2,https://polishteam.ru/FTP/kim/Tapety/)</onclick>
+                    <onclick>Skin.SetString(ItemToEdit.MultiFanart,2,http://kim.cherrytv.webd.pl/Tapety/)</onclick>
                     <onclick>Dialog.Close(1122)</onclick>
                     <visible>System.HasAddon(script.grab.fanart) + !String.IsEqual(Window(Home).Property(Nox.Temp),Profiles.Fallback)</visible>
                 </item>
@@ -144,7 +144,7 @@
                 <item>
                     <label>$LOCALIZE[31064]: FTP</label>
                     <onclick>Skin.SetString(ItemToEdit.BGType,3)</onclick>
-                    <onclick>Skin.SetString(ItemToEdit.MultiFanart,3,https://polishteam.ru/FTP/kim/Tapety/)</onclick>
+                    <onclick>Skin.SetString(ItemToEdit.MultiFanart,3,http://kim.cherrytv.webd.pl/Tapety/)</onclick>
                     <onclick>Dialog.Close(1122)</onclick>
                     <visible>System.HasAddon(script.grab.fanart) + !String.IsEqual(Window(Home).Property(Nox.Temp),Profiles.Fallback)</visible>
                 </item>
@@ -158,7 +158,7 @@
                 <item>
                     <label>$LOCALIZE[31065]: FTP</label>
                     <onclick>Skin.SetString(ItemToEdit.BGType,3)</onclick>
-                    <onclick>Skin.SetString(ItemToEdit.MultiFanart,4,https://polishteam.ru/FTP/kim/Tapety/)</onclick>
+                    <onclick>Skin.SetString(ItemToEdit.MultiFanart,4,http://kim.cherrytv.webd.pl/Tapety/)</onclick>
                     <onclick>Dialog.Close(1122)</onclick>
                     <visible>System.HasAddon(script.grab.fanart) + !String.IsEqual(Window(Home).Property(Nox.Temp),Profiles.Fallback)</visible>
                 </item>
@@ -172,7 +172,7 @@
                 <item>
                     <label>$LOCALIZE[31066]: FTP</label>
                     <onclick>Skin.SetString(ItemToEdit.BGType,3)</onclick>
-                    <onclick>Skin.SetString(ItemToEdit.MultiFanart,5,https://polishteam.ru/FTP/kim/Tapety/)</onclick>
+                    <onclick>Skin.SetString(ItemToEdit.MultiFanart,5,http://kim.cherrytv.webd.pl/Tapety/)</onclick>
                     <onclick>Dialog.Close(1122)</onclick>
                     <visible>System.HasAddon(script.grab.fanart) + !String.IsEqual(Window(Home).Property(Nox.Temp),Profiles.Fallback)</visible>
                 </item>
@@ -186,7 +186,7 @@
                 <item>
                     <label>$LOCALIZE[31028]: $LOCALIZE[31029]: FTP</label>
                     <onclick>Skin.SetString(ItemToEdit.BGType,4)</onclick>
-                    <onclick>Skin.SetString(ItemToEdit.MultiFanart,7,https://polishteam.ru/FTP/kim/Tapety/)</onclick>
+                    <onclick>Skin.SetString(ItemToEdit.MultiFanart,7,http://kim.cherrytv.webd.pl/Tapety/)</onclick>
                     <onclick>Dialog.Close(1122)</onclick>
                     <visible>String.IsEmpty(Window(Home).Property(No.Cases))</visible>
                 </item>
@@ -200,7 +200,7 @@
                 <item>
                     <label>$LOCALIZE[31028]: $LOCALIZE[31031]: FTP</label>
                     <onclick>Skin.SetString(ItemToEdit.BGType,4)</onclick>
-                    <onclick>Skin.SetString(ItemToEdit.MultiFanart,11,https://polishteam.ru/FTP/kim/Tapety/)</onclick>
+                    <onclick>Skin.SetString(ItemToEdit.MultiFanart,11,http://kim.cherrytv.webd.pl/Tapety/)</onclick>
                     <onclick>Dialog.Close(1122)</onclick>
                     <visible>String.IsEmpty(Window(Home).Property(No.Cases))</visible>
                 </item>
@@ -214,7 +214,7 @@
                 <item>
                     <label>$LOCALIZE[31028]: $LOCALIZE[31030]: FTP</label>
                     <onclick>Skin.SetString(ItemToEdit.BGType,4)</onclick>
-                    <onclick>Skin.SetString(ItemToEdit.MultiFanart,8,https://polishteam.ru/FTP/kim/Tapety/)</onclick>
+                    <onclick>Skin.SetString(ItemToEdit.MultiFanart,8,http://kim.cherrytv.webd.pl/Tapety/)</onclick>
                     <onclick>Dialog.Close(1122)</onclick>
                     <visible>String.IsEmpty(Window(Home).Property(No.Cases))</visible>
                 </item>

@@ -6,7 +6,7 @@
         <control type="group">
             <top>-20</top>
             <visible>Control.IsVisible(50)</visible>
-            <!-- <include>VisibleFadeAnimation</include> -->
+            <include>VisibleFadeAnimation</include>
             <control type="image">
                 <left>-5.6</left>
                 <width>1161</width>
@@ -110,11 +110,11 @@
                     </control>
                     <control type="image">
                         <top>14</top>
-                        <width>1148</width>
+                        <width>1200</width>
                         <height>94</height>
                         <texture colordiffuse="$VAR[HighlightBarColor]" border="4">listselect_fo.png</texture>
                         <visible>Control.HasFocus(50)</visible>
-                        <!-- <include>VisibleFadeAnimation</include> -->
+                        <include>VisibleFadeAnimation</include>
                     </control>
                     <control type="label">
                         <width>150</width>
@@ -209,7 +209,7 @@
                     <top>60</top>
                     <width>730</width>
                     <height>400</height>
-                    <texture diffuse="homewidgets/cases/glass/landscape_e.png">kodisplash.png</texture>
+                    <texture diffuse="diffuse_color_picker.png">kodisplash.png</texture>
                     <visible>!Player.HasVideo</visible>
                 </control>
                 <control type="image">
@@ -217,7 +217,7 @@
                     <top>60</top>
                     <width>730</width>
                     <height>400</height>
-                    <texture diffuse="homewidgets/cases/glass/landscape_e.png">$INFO[ListItem.EPGEventIcon]</texture>
+                    <texture diffuse="diffuse_color_picker.png">$INFO[ListItem.EPGEventIcon]</texture>
                     <visible>!Player.HasVideo + !Skin.HasSetting(Enable.PVRThumbs)</visible>
                 </control>
                 <control type="image">
@@ -225,7 +225,7 @@
                     <top>60</top>
                     <width>730</width>
                     <height>400</height>
-                    <texture diffuse="homewidgets/cases/glass/landscape_e.png">$VAR[NoPlayerPVRThumbVar]</texture>
+                    <texture>$VAR[NoPlayerPVRThumbVar]</texture>
                     <aspectratio scalediffuse="false" align="center" aligny="top">stretch</aspectratio>
                     <visible>!Player.HasVideo + Skin.HasSetting(Enable.PVRThumbs)</visible>
                 </control>
@@ -267,7 +267,7 @@
                 </control>
                 <control type="group">
                     <visible>Player.HasVideo</visible>
-                    <!-- <include>VisibleFadeAnimation</include> -->
+                    <include>VisibleFadeAnimation</include>
                     <left>32</left>
                     <top>70</top>
                     <control type="image">
@@ -291,7 +291,7 @@
                         <top>8</top>
                         <width>750</width>
                         <height>40</height>
-                        <label>[I]$INFO[VideoPlayer.Title,$LOCALIZE[31040]:  ][/I] | $VAR[PremieredLabel]</label>
+                        <label>[I]$INFO[VideoPlayer.Title,$LOCALIZE[31040]:  ][/I]</label>
                         <font>font13</font>
                         <scroll>true</scroll>
                     </control>
@@ -382,17 +382,17 @@
             <left>50</left>
             <top>55</top>
             <visible>Control.IsVisible(51)</visible>
-            <!-- <include>VisibleFadeAnimation</include> -->
+            <include>VisibleFadeAnimation</include>
             <control type="image">
                 <width>1840</width>
                 <height>1012</height>
-                <texture colordiffuse="B3303030" border="40">listpanel_back.png</texture>
+                <texture colordiffuse="$VAR[ThemePanelColor]" border="40">listpanel_back.png</texture>
             </control>
             <control type="panel" id="51">
                 <left>32</left>
                 <top>30</top>
                 <width>1800</width>
-                <height>741</height>
+                <height>730</height>
                 <onleft>SetProperty(MediaMenu,True,Home)</onleft>
                 <onleft>SetFocus(9050)</onleft>
                 <onright>62</onright>
@@ -497,7 +497,7 @@
                             <width>440</width>
                             <height>175</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture colordiffuse="FFFFFFFF" border="40" background="true">listpanel_back.png</texture>
+                            <texture colordiffuse="$VAR[ThemePanelColor]" border="40" background="true">listpanel_back.png</texture>
                         </control>
                         <!--   <control type="image">
                             <left>-13</left>
@@ -513,7 +513,7 @@
                             <width>320</width>
                             <height>58</height>
                             <font>font13b</font>
-                            <textcolor>FF3366CC</textcolor>
+                            <textcolor>grey</textcolor>
                             <label>[B]$INFO[ListItem.ChannelNumberLabel]$INFO[ListItem.Label,  ][/B]</label>
                         </control>
                         <control type="progress">
@@ -734,7 +734,7 @@
         <control type="group">
             <top>-20</top>
             <visible>Control.IsVisible(52)</visible>
-            <!-- <include>VisibleFadeAnimation</include> -->
+            <include>VisibleFadeAnimation</include>
             <control type="group">
                 <top>-2</top>
                 <control type="image">
@@ -848,7 +848,7 @@
                             </control>
                             <control type="image">
                                 <left>1</left>
-                                <width>1165</width>
+                                <width>1170</width>
                                 <height>63</height>
                                 <texture colordiffuse="$VAR[HighlightBarColor]" border="4">listselect_fo.png</texture>
                                 <animation effect="fade" start="100" end="0" time="0" tween="sine" easing="inout" condition="!Control.HasFocus(52)">Conditional</animation>
@@ -953,7 +953,7 @@
                         </control>
                         <control type="group">
                             <visible>Player.HasVideo</visible>
-                            <!-- <include>VisibleFadeAnimation</include> -->
+                            <include>VisibleFadeAnimation</include>
                             <control type="image">
                                 <width>780</width>
                                 <height>405</height>
@@ -1172,7 +1172,7 @@
                         <height>60</height>
                         <texture colordiffuse="$VAR[HighlightBarColor]" border="4">listselect_fo.png</texture>
                         <visible>Control.HasFocus(50)</visible>
-                        <!-- <include>VisibleFadeAnimation</include> -->
+                        <include>VisibleFadeAnimation</include>
                     </control>
                     <control type="image">
                         <left>-15</left>
@@ -1445,7 +1445,7 @@
                         <height>120</height>
                         <texture colordiffuse="$VAR[HighlightBarColor]" border="4">listselect_fo.png</texture>
                         <visible>Control.HasFocus(51)</visible>
-                        <!-- <include>VisibleFadeAnimation</include> -->
+                        <include>VisibleFadeAnimation</include>
                     </control>
                     <control type="image">
                         <left>15</left>

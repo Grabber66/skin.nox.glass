@@ -42,8 +42,8 @@
 	<include file="View_602_FanartList.xml"/>
 	<include file="View_603_Music_JukeBox.xml"/>
 	<include file="View_609_Fullscreen_Wall.xml"/>
-	<!--<include file="script-skinvariables-includes.xml"/>
-	 Media Menu -->
+	<include file="script-skinvariables-includes.xml"/>
+	<!-- Media Menu -->
 	<include name="SideBladeLeft">
 		<animation effect="slide" start="440,0" end="0,0" time="0" tween="quadratic" easing="out" condition="String.IsEmpty(Window(Home).Property(MediaMenu))">Conditional</animation>
 		<animation effect="slide" start="0,0" end="-440,0" time="0" tween="quadratic" easing="out">WindowClose</animation>
@@ -292,7 +292,6 @@
 					<include>ButtonCommonValues</include>
 					<label>$LOCALIZE[33068]</label>
 					<onclick>ActivateWindow(1128)</onclick>
-					<visible>![Skin.HasSetting(Disable.PVRGuide) | Window.IsActive(tvguide)]</visible>
 				</control>
 				<control type="button" id="201">
 					<description>View options</description>
@@ -320,14 +319,14 @@
 					<onclick>ClearProperty(MediaMenu,Home)</onclick>
 					<onclick>ActivateWindow(1150)</onclick>
 				</control>
-			<!--	<control type="button" id="331">
+				<control type="button" id="331">
 					<description>Settings</description>
 					<textwidth>352</textwidth>
 					<include>ButtonCommonValues</include>
 					<label>$LOCALIZE[32004]</label>
 					<onclick>ClearProperty(MediaMenu,Home)</onclick>
 					<onclick>ActivateWindow(1170)</onclick>
-				</control> -->
+				</control>
 				<control type="radiobutton" id="332">
 					<description>Settings</description>
 					<textwidth>352</textwidth>
@@ -551,10 +550,10 @@
 			</control>
 			<control type="group">
 				<visible>!Window.IsActive(volumebar)</visible>
-				<!-- <include>VisibleFadeAnimation</include> -->
+				<include>VisibleFadeAnimation</include>
 				<control type="group">
 					<visible>!Player.HasMedia + ![MusicPlayer.HasNext + [Player.Playing | Player.Paused]]</visible>
-					<!-- <include>VisibleFadeAnimation</include> -->
+					<include>VisibleFadeAnimation</include>
 					<control type="label">
 						<left>20</left>
 						<top>6</top>
@@ -609,7 +608,7 @@
 				</control>
 				<control type="group">
 					<visible>Player.HasMedia</visible>
-					<!-- <include>VisibleFadeAnimation</include> -->
+					<include>VisibleFadeAnimation</include>
 					<!--        <control type="progress">
                         <description>Progressbar</description>
                         <top>37</top>
@@ -714,7 +713,7 @@
 					<align>center</align>
 					<itemgap>5</itemgap>
 					<visible>![String.IsEqual(Container.NumItems,0) | String.IsEmpty(Container.NumItems)]</visible>
-					<!-- <include>VisibleFadeAnimation</include> -->
+					<include>VisibleFadeAnimation</include>
 					<control type="label">
 						<width>auto</width>
 						<height>90</height>
@@ -1439,17 +1438,17 @@
 	<include name="PVRVideoOSD">
 		<control type="image">
 			<left>-5%</left>
-			<top>994</top>
+			<top>970</top>
 			<width>110%</width>
-			<height>90</height>
-			<texture border="30" colordiffuse="red">dialogs/default/bg.png</texture>
+			<height>147</height>
+			<texture border="40" colordiffuse="$VAR[ThemePanelColor]">dialogs/default/bg.png</texture>
 			<visible>!Skin.HasSetting(VideoOSDOnTop)</visible>
 		</control>
 		<control type="image">
 			<left>-5%</left>
 			<top>-30</top>
 			<width>110%</width>
-			<height>117</height>
+			<height>137</height>
 			<texture border="20" flipy="true" colordiffuse="$VAR[ThemePanelColor]">dialogs/default/bg.png</texture>
 			<visible>Skin.HasSetting(VideoOSDOnTop)</visible>
 		</control>
@@ -1462,12 +1461,12 @@
 			<texture background="true">$VAR[OSDInfoImage]</texture>
 		</control>
 		<control type="group" id="12000">
-			<left>1</left>
-			<animation effect="slide" end="0,-5" time="0" tween="quadratic" condition="!Skin.HasSetting(VideoOSDOnTop) + !String.IsEqual(Skin.String(LiveTV.InfobarType),1) + Window.IsVisible(DialogPVRInfo.xml)">Conditional</animation>
-			<animation effect="slide" end="0,72" time="0" tween="quadratic" condition="String.IsEqual(Skin.String(LiveTV.InfobarType),1)">Conditional</animation>
+			<left>-3</left>
+			<animation effect="slide" end="0,-5" time="0" tween="quadratic" condition="!Player.ShowInfo + !Skin.HasSetting(VideoOSDOnTop) + !String.IsEqual(Skin.String(LiveTV.InfobarType),1) + Window.IsVisible(DialogPVRInfo.xml)">Conditional</animation>
+			<animation effect="slide" end="0,34" time="0" tween="quadratic" condition="!Player.ShowInfo + String.IsEqual(Skin.String(LiveTV.InfobarType),1)">Conditional</animation>
 			<control type="image">
 				<left>0.5%</left>
-				<top>11</top>
+				<top>10</top>
 				<width>300</width>
 				<height>120</height>
 				<aspectratio>scale</aspectratio>
@@ -1476,37 +1475,37 @@
 			</control>
 			<control type="image">
 				<left>295</left>
-				<top>446</top>
+				<top>450</top>
 				<width>250</width>
 				<height>250</height>
 				<aspectratio>stretch</aspectratio>
 				<texture background="true">$VAR[PVRVideoPlayerDiscartVar]</texture>
-				<include>SlideLeftPvrPlayerDiscAnimation</include>
+				<animation effect="slide" start="-220" end="0" time="3000" tween="cubic" easing="inout" delay="200">WindowOpen</animation>
 				<visible>!Skin.HasSetting(VideoOSDOnTop) + Skin.HasSetting(DisablePalyerDiscArt)</visible>
 			</control>
 			<control type="image">
 				<left>245</left>
-				<top>398</top>
+				<top>403</top>
 				<width>350</width>
 				<height>350</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" border="3" colordiffuse="FF0000ff">$VAR[VideoPlayerPosterCdMask]</texture>
-				<include>SlideLeftPvrPlayerDiscAnimation</include>
+				<texture background="true" border="3" colordiffuse="FF0000FF">$VAR[VideoPlayerPosterCdMask]</texture>
+				<animation effect="slide" start="-220" end="0" time="3000" tween="cubic" easing="inout" delay="200">WindowOpen</animation>
 				<visible>!Skin.HasSetting(VideoOSDOnTop) + String.IsEmpty(VideoPlayerPosterCdMask) + Skin.HasSetting(DisablePalyerDiscArt)</visible>
 			</control>
 			<control type="image">
-				<left>-67</left>
-				<top>397</top>
+				<left>-64</left>
+				<top>400</top>
 				<width>440</width>
 				<height>583</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" border="8" colordiffuse="FF0000ff">$VAR[VideoPlayerPosterMask]</texture>
+				<texture background="true" border="8" colordiffuse="FF0000FF">$VAR[VideoPlayerPosterMask]</texture>
 				<visible>!Skin.HasSetting(VideoOSDOnTop) + String.IsEmpty(VideoPlayerPosterMask)</visible>
 			</control>
 			<control type="image">
-				<left>-1</left>
-				<top>445</top>
-				<width>326</width>
+				<left>3</left>
+				<top>450</top>
+				<width>330</width>
 				<height>480</height>
 				<aspectratio>stretch</aspectratio>
 				<texture background="true">$VAR[PVRPosterVar]</texture>
@@ -1514,13 +1513,13 @@
 			</control>
 		</control>
 		<control type="group" id="12001">
-			<animation effect="slide" tween="quadratic" condition="Window.IsVisible(DialogPVRInfo.xml)">Conditional</animation>
-			<animation effect="slide" end="0,44" time="0" tween="quadratic" condition="String.IsEqual(Skin.String(LiveTV.InfobarType),1)">Conditional</animation>
+			<animation effect="slide" tween="quadratic" condition="!Player.ShowInfo + Window.IsVisible(DialogPVRInfo.xml)">Conditional</animation>
+			<animation effect="slide" end="0,44" time="0" tween="quadratic" condition="!Player.ShowInfo + String.IsEqual(Skin.String(LiveTV.InfobarType),1)">Conditional</animation>
 			<left>-3</left>
-			<top>560</top>
+			<top>525</top>
 			<control type="image">
 				<left>0.5%</left>
-				<top>-490</top>
+				<top>-445</top>
 				<width>400</width>
 				<height>120</height>
 				<aspectratio>stretch</aspectratio>
@@ -1532,17 +1531,16 @@
 				<top>-55</top>
 				<width>440</width>
 				<height>583</height>
-				<texture background="true" border="5" colordiffuse="FF0000ff">$VAR[VideoPlayerPosterMask]</texture>
+				<texture background="true" border="5" colordiffuse="FF0000FF">$VAR[VideoPlayerPosterMask]</texture>
 				<visible>Skin.HasSetting(VideoOSDOnTop) + String.IsEmpty(VideoPlayerPosterMask)</visible>
 			</control>
 			<control type="image">
 				<left>295</left>
-				<top>-2</top>
 				<width>250</width>
 				<height>250</height>
 				<aspectratio>stretch</aspectratio>
 				<texture background="true">$VAR[PVRVideoPlayerDiscartVar]</texture>
-				<include>SlideLeftSpinningDiscAnimationPvr</include>
+				<animation effect="rotatey" start="218" end="0" time="3000" tween="cubic" easing="inout" delay="600">WindowOpen</animation>
 				<visible>Skin.HasSetting(VideoOSDOnTop) + Skin.HasSetting(DisablePalyerDiscArt)</visible>
 			</control>
 			<control type="image">
@@ -1552,13 +1550,12 @@
 				<height>350</height>
 				<aspectratio>stretch</aspectratio>
 				<texture background="true" border="3" colordiffuse="FF0000ff">$VAR[VideoPlayerPosterCdMask]</texture>
-				<include>SlideLeftSpinningDiscAnimationPvr</include>
+				<animation effect="rotatey" start="218" end="0" time="3000" tween="cubic" easing="inout" delay="600">WindowOpen</animation>
 				<visible>Skin.HasSetting(VideoOSDOnTop) + String.IsEmpty(VideoPlayerPosterCdMask) + Skin.HasSetting(DisablePalyerDiscArt)</visible>
 			</control>
 			<control type="image">
 				<left>3</left>
-				<top>-2</top>
-				<width>324</width>
+				<width>330</width>
 				<height>480</height>
 				<aspectratio>stretch</aspectratio>
 				<texture background="true">$VAR[PVRPosterVar]</texture>
@@ -1566,8 +1563,8 @@
 			</control>
 		</control>
 		<control type="grouplist" id="203">
-			<animation effect="slide" end="0,-1011" condition="Skin.HasSetting(VideoOSDOnTop)">Conditional</animation>
-			<top>1010</top>
+			<animation effect="slide" end="0,-992" condition="Skin.HasSetting(VideoOSDOnTop)">Conditional</animation>
+			<top>997</top>
 			<height>144</height>
 			<width>100%</width>
 			<align>center</align>
@@ -1583,8 +1580,8 @@
 				<animation effect="zoom" end="110" time="200">Focus</animation>
 				<font/>
 				<label/>
-				<width>65</width>
-				<height>65</height>
+				<width>75</width>
+				<height>75</height>
 				<onclick>ActivateWindow(osdaudiosettings)</onclick>
 			</control>
 			<control type="button" id="801">
@@ -1593,8 +1590,8 @@
 				<animation effect="zoom" end="110" time="200">Focus</animation>
 				<font/>
 				<label/>
-				<width>65</width>
-				<height>65</height>
+				<width>75</width>
+				<height>75</height>
 				<onclick>ActivateWindow(osdvideosettings)</onclick>
 			</control>
 			<control type="button" id="802">
@@ -1603,8 +1600,8 @@
 				<animation effect="zoom" end="110" time="200">Focus</animation>
 				<font/>
 				<label/>
-				<width>65</width>
-				<height>65</height>
+				<width>75</width>
+				<height>75</height>
 				<onclick>ActivateWindow(OSDSubtitleSettings)</onclick>
 			</control>
 			<control type="button" id="814">
@@ -1613,8 +1610,8 @@
 				<animation effect="zoom" end="110" time="200">Focus</animation>
 				<font/>
 				<label/>
-				<width>65</width>
-				<height>65</height>
+				<width>75</width>
+				<height>75</height>
 				<onclick>ActivateWindow(Teletext)</onclick>
 			</control>
 			<control type="button" id="803">
@@ -1623,8 +1620,8 @@
 				<animation effect="zoom" end="110" time="200">Focus</animation>
 				<font/>
 				<label/>
-				<width>65</width>
-				<height>65</height>
+				<width>75</width>
+				<height>75</height>
 				<onclick>PlayerControl(Previous)</onclick>
 			</control>
 			<control type="button" id="804">
@@ -1634,8 +1631,8 @@
 				<animation effect="zoom" end="110" time="200">Focus</animation>
 				<font/>
 				<label/>
-				<width>65</width>
-				<height>65</height>
+				<width>75</width>
+				<height>75</height>
 				<onclick>PlayerControl(Next)</onclick>
 			</control>
 			<control type="button" id="805">
@@ -1644,8 +1641,8 @@
 				<animation effect="zoom" end="110" time="200">Focus</animation>
 				<font/>
 				<label/>
-				<width>65</width>
-				<height>65</height>
+				<width>75</width>
+				<height>75</height>
 				<onclick>PlayerControl(Rewind)</onclick>
 				<visible>Player.SeekEnabled</visible>
 				<visible>!Skin.HasSetting(Disable.PlayerControlButtons)</visible>
@@ -1658,8 +1655,8 @@
 				<animation effect="zoom" end="110" time="200">Focus</animation>
 				<label/>
 				<altlabel>208</altlabel>
-				<width>65</width>
-				<height>65</height>
+				<width>75</width>
+				<height>75</height>
 				<font/>
 				<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
 				<onclick>PlayerControl(Play)</onclick>
@@ -1672,10 +1669,9 @@
 				<animation effect="zoom" end="110" time="200">Focus</animation>
 				<font/>
 				<label/>
-				<width>65</width>
-				<height>65</height>
+				<width>75</width>
+				<height>75</height>
 				<onclick>PlayerControl(Stop)</onclick>
-				<onclick>ActivateWindow(pvrchannelguide)</onclick>
 				<visible>!Skin.HasSetting(Disable.PlayerControlButtons)</visible>
 			</control>
 			<control type="button" id="808">
@@ -1684,8 +1680,8 @@
 				<animation effect="zoom" end="110" time="200">Focus</animation>
 				<font/>
 				<label/>
-				<width>65</width>
-				<height>65</height>
+				<width>75</width>
+				<height>75</height>
 				<onclick>PlayerControl(Forward)</onclick>
 				<visible>Player.SeekEnabled</visible>
 				<visible>!Skin.HasSetting(Disable.PlayerControlButtons)</visible>
@@ -1699,8 +1695,8 @@
 				<animation effect="zoom" end="110" time="200">Focus</animation>
 				<label/>
 				<altlabel>208</altlabel>
-				<width>65</width>
-				<height>65</height>
+				<width>75</width>
+				<height>75</height>
 				<font/>
 				<onclick>PVR.ToggleRecordPlayingChannel</onclick>
 				<visible>PVR.CanRecordPlayingChannel</visible>
@@ -1712,8 +1708,8 @@
 				<animation effect="zoom" end="110" time="200">Focus</animation>
 				<font/>
 				<label/>
-				<width>65</width>
-				<height>65</height>
+				<width>75</width>
+				<height>75</height>
 				<onclick>Dialog.Close(VideoOSD)</onclick>
 				<onclick>ActivateWindow(PVROSDChannels)</onclick>
 			</control>
@@ -1723,8 +1719,8 @@
 				<animation effect="zoom" end="110" time="200">Focus</animation>
 				<font/>
 				<label/>
-				<width>65</width>
-				<height>65</height>
+				<width>75</width>
+				<height>75</height>
 				<onclick>Dialog.Close(VideoOSD)</onclick>
 				<onclick>ActivateWindow(pvrchannelguide)</onclick>
 			</control>
@@ -1734,8 +1730,8 @@
 				<animation effect="zoom" end="110" time="200">Focus</animation>
 				<font/>
 				<label/>
-				<width>65</width>
-				<height>65</height>
+				<width>75</width>
+				<height>75</height>
 				<onclick>ToggleStereoMode</onclick>
 				<visible>VideoPlayer.IsStereoscopic</visible>
 			</control>
@@ -1745,8 +1741,8 @@
 				<animation effect="zoom" end="110" time="200">Focus</animation>
 				<font/>
 				<label/>
-				<width>65</width>
-				<height>65</height>
+				<width>75</width>
+				<height>75</height>
 				<onclick>Dialog.Close(VideoOSD)</onclick>
 				<onclick>ActivateWindow(TVGuide)</onclick>
 			</control>
@@ -1756,8 +1752,8 @@
 				<animation effect="zoom" end="110" time="200">Focus</animation>
 				<font/>
 				<label/>
-				<width>65</width>
-				<height>65</height>
+				<width>75</width>
+				<height>75</height>
 				<onclick>ActivateWindow(1115)</onclick>
 				<oninfo>ActivateWindow(1115)</oninfo>
 			</control>
@@ -1767,8 +1763,8 @@
 				<animation effect="zoom" end="110" time="200">Focus</animation>
 				<font/>
 				<label/>
-				<width>65</width>
-				<height>65</height>
+				<width>75</width>
+				<height>75</height>
 				<onclick>PlayerProcessInfo</onclick>
 				<oninfo>PlayerProcessInfo</oninfo>
 			</control>
@@ -1778,8 +1774,8 @@
 				<texturenofocus colordiffuse="$VAR[AVButtonColorNoFo]">osd/buttons/screenFO.png</texturenofocus>
 				<animation effect="zoom" end="110" time="200">Focus</animation>
 				<label/>
-				<width>65</width>
-				<height>65</height>
+				<width>75</width>
+				<height>75</height>
 				<font/>
 				<onclick>Dialog.Close(all,true)</onclick>
 				<onclick>SetProperty(Enable.ScreenshotMode,True,Home)</onclick>
@@ -1792,8 +1788,8 @@
 				<texturenofocus colordiffuse="$VAR[AVButtonColorNoFo]">osd/buttons/ads.png</texturenofocus>
 				<animation effect="zoom" end="110" time="200">Focus</animation>
 				<label/>
-				<width>65</width>
-				<height>65</height>
+				<width>75</width>
+				<height>75</height>
 				<font/>
 				<onclick>SetProperty(ADZapperPrompt, true, 10000)</onclick>
 			</control>
@@ -3255,7 +3251,7 @@
 				<visible>!Skin.HasSetting(Disable.FullscreenPoster)</visible>
 				<control type="image">
 					<left>20</left>
-					<top>-175</top>
+					<top>-155</top>
 					<width>350</width>
 					<height>350</height>
 					<aspectratio aligny="top">keep</aspectratio>
@@ -3872,7 +3868,7 @@
 			<visible allowhiddenfocus="true">Control.HasFocus(614)</visible>
 			<left>880</left>
 			<top>310</top>
-			<!-- <include>VisibleFadeAnimation</include> -->
+			<include>VisibleFadeAnimation</include>
 			<animation effect="slide" start="0" end="-608,-60" time="0" condition="Control.IsVisible(57)">Conditional</animation>
 			<animation effect="slide" start="0" end="0,200" time="0" condition="Control.IsVisible(59)">Conditional</animation>
 			<animation effect="slide" start="0" end="0,-200" time="0" condition="Control.IsVisible(505)">Conditional</animation>

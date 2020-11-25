@@ -22,11 +22,10 @@
                 <description>Exit button</description>
                 <width>510</width>
                 <height>60</height>
-                <textcolor>FF929292</textcolor>
-                <focusedcolor>FF9EFCFF</focusedcolor>
+                <textcolor>grey2</textcolor>
+                <focusedcolor>$VAR[FocusedMainMenuColor]</focusedcolor>
                 <textwidth>435</textwidth>
                 <textoffsetx>45</textoffsetx>
-				<align>center</align>
                 <texturenofocus colordiffuse="$VAR[ThemePanelBgColor]" border="20,-3,20,-3">dialogs\default\bg.png</texturenofocus>
                 <texturefocus colordiffuse="$VAR[ThemePanelBgColor]" border="20,-3,20,-3">dialogs\default\bg.png</texturefocus>
                 <onclick>Quit()</onclick>
@@ -38,11 +37,10 @@
                 <description>Shutdown button</description>
                 <width>510</width>
                 <height>60</height>
-                <textcolor>FF929292</textcolor>
-                <focusedcolor>FF9EFCFF</focusedcolor>
+                <textcolor>grey2</textcolor>
+                <focusedcolor>$VAR[FocusedMainMenuColor]</focusedcolor>
                 <textwidth>435</textwidth>
                 <textoffsetx>45</textoffsetx>
-				<align>center</align>
                 <texturenofocus colordiffuse="$VAR[ThemePanelBgColor]" border="20,-3,20,-3">dialogs\default\bg.png</texturenofocus>
                 <texturefocus colordiffuse="$VAR[ThemePanelBgColor]" border="20,-3,20,-3">dialogs\default\bg.png</texturefocus>
                 <onclick>Powerdown()</onclick>
@@ -54,11 +52,10 @@
                 <description>Custom Shutdown Timer</description>
                 <width>510</width>
                 <height>60</height>
-                <textcolor>FF929292</textcolor>
-                <focusedcolor>FF9EFCFF</focusedcolor>
+                <textcolor>grey2</textcolor>
+                <focusedcolor>$VAR[FocusedMainMenuColor]</focusedcolor>
                 <textwidth>435</textwidth>
                 <textoffsetx>45</textoffsetx>
-				<align>center</align>
                 <texturenofocus colordiffuse="$VAR[ThemePanelBgColor]" border="20,-3,20,-3">dialogs\default\bg.png</texturenofocus>
                 <texturefocus colordiffuse="$VAR[ThemePanelBgColor]" border="20,-3,20,-3">dialogs\default\bg.png</texturefocus>
                 <onclick>AlarmClock(shutdowntimer,Shutdown())</onclick>
@@ -71,11 +68,10 @@
                 <description>Cancel Shutdown Timer</description>
                 <width>510</width>
                 <height>60</height>
-                <textcolor>FF929292</textcolor>
-                <focusedcolor>FF9EFCFF</focusedcolor>
+                <textcolor>grey2</textcolor>
+                <focusedcolor>$VAR[FocusedMainMenuColor]</focusedcolor>
                 <textwidth>435</textwidth>
                 <textoffsetx>45</textoffsetx>
-				<align>center</align>
                 <texturenofocus colordiffuse="$VAR[ThemePanelBgColor]" border="20,-3,20,-3">dialogs\default\bg.png</texturenofocus>
                 <texturefocus colordiffuse="$VAR[ThemePanelBgColor]" border="20,-3,20,-3">dialogs\default\bg.png</texturefocus>
                 <onclick>CancelAlarm(shutdowntimer)</onclick>
@@ -87,11 +83,10 @@
                 <description>Suspend button</description>
                 <width>510</width>
                 <height>60</height>
-                <textcolor>FF929292</textcolor>
-                <focusedcolor>FF9EFCFF</focusedcolor>
+                <textcolor>grey2</textcolor>
+                <focusedcolor>$VAR[FocusedMainMenuColor]</focusedcolor>
                 <textwidth>435</textwidth>
                 <textoffsetx>45</textoffsetx>
-				<align>center</align>
                 <texturenofocus colordiffuse="$VAR[ThemePanelBgColor]" border="20,-3,20,-3">dialogs\default\bg.png</texturenofocus>
                 <texturefocus colordiffuse="$VAR[ThemePanelBgColor]" border="20,-3,20,-3">dialogs\default\bg.png</texturefocus>
                 <onclick>Suspend()</onclick>
@@ -103,11 +98,10 @@
                 <description>Hibernate button</description>
                 <width>510</width>
                 <height>60</height>
-                <textcolor>FF929292</textcolor>
-                <focusedcolor>FF9EFCFF</focusedcolor>
+                <textcolor>grey2</textcolor>
+                <focusedcolor>$VAR[FocusedMainMenuColor]</focusedcolor>
                 <textwidth>435</textwidth>
                 <textoffsetx>45</textoffsetx>
-				<align>center</align>
                 <texturenofocus colordiffuse="$VAR[ThemePanelBgColor]" border="20,-3,20,-3">dialogs\default\bg.png</texturenofocus>
                 <texturefocus colordiffuse="$VAR[ThemePanelBgColor]" border="20,-3,20,-3">dialogs\default\bg.png</texturefocus>
                 <onclick>Hibernate()</onclick>
@@ -119,11 +113,10 @@
                 <description>Reboot button</description>
                 <width>510</width>
                 <height>60</height>
-                <textcolor>FF929292</textcolor>
-                <focusedcolor>FF9EFCFF</focusedcolor>
+                <textcolor>grey2</textcolor>
+                <focusedcolor>$VAR[FocusedMainMenuColor]</focusedcolor>
                 <textwidth>435</textwidth>
                 <textoffsetx>45</textoffsetx>
-				<align>center</align>
                 <texturenofocus colordiffuse="$VAR[ThemePanelBgColor]" border="20,-3,20,-3">dialogs\default\bg.png</texturenofocus>
                 <texturefocus colordiffuse="$VAR[ThemePanelBgColor]" border="20,-3,20,-3">dialogs\default\bg.png</texturefocus>
                 <onclick>Reset()</onclick>
@@ -135,11 +128,10 @@
                 <description>Logoff button</description>
                 <width>510</width>
                 <height>60</height>
-                <textcolor>FF929292</textcolor>
-                <focusedcolor>FF9EFCFF</focusedcolor>
+                <textcolor>grey2</textcolor>
+                <focusedcolor>$VAR[FocusedMainMenuColor]</focusedcolor>
                 <textwidth>435</textwidth>
                 <textoffsetx>45</textoffsetx>
-				<align>center</align>
                 <texturenofocus colordiffuse="$VAR[ThemePanelBgColor]" border="20,-3,20,-3">dialogs\default\bg.png</texturenofocus>
                 <texturefocus colordiffuse="$VAR[ThemePanelBgColor]" border="20,-3,20,-3">dialogs\default\bg.png</texturefocus>
                 <onclick>dialog.close(all,true)</onclick>
@@ -157,7 +149,6 @@
                 <altlabel>20045</altlabel>
                 <textwidth>435</textwidth>
                 <textoffsetx>45</textoffsetx>
-				<align>center</align>
                 <texturenofocus colordiffuse="$VAR[ThemePanelBgColor]" border="20,-3,20,-3">dialogs\default\bg.png</texturenofocus>
                 <texturefocus colordiffuse="$VAR[ThemePanelBgColor]" border="20,-3,20,-3">dialogs\default\bg.png</texturefocus>
                 <usealttexture>!System.IsMaster</usealttexture>
@@ -170,11 +161,10 @@
                 <description>Inhibit idle shutdown</description>
                 <width>510</width>
                 <height>60</height>
-                <textcolor>FF929292</textcolor>
-                <focusedcolor>FF9EFCFF</focusedcolor>
+                <textcolor>grey2</textcolor>
+                <focusedcolor>$VAR[FocusedMainMenuColor]</focusedcolor>
                 <textwidth>435</textwidth>
                 <textoffsetx>45</textoffsetx>
-				<align>center</align>
                 <texturenofocus colordiffuse="$VAR[ThemePanelBgColor]" border="20,-3,20,-3">dialogs\default\bg.png</texturenofocus>
                 <texturefocus colordiffuse="$VAR[ThemePanelBgColor]" border="20,-3,20,-3">dialogs\default\bg.png</texturefocus>
                 <onclick>InhibitIdleShutdown(true)</onclick>
@@ -186,11 +176,10 @@
                 <description>Allow idle shutdown</description>
                 <width>510</width>
                 <height>60</height>
-                <textcolor>FF929292</textcolor>
-                <focusedcolor>FF9EFCFF</focusedcolor>
+                <textcolor>grey2</textcolor>
+                <focusedcolor>$VAR[FocusedMainMenuColor]</focusedcolor>
                 <textwidth>435</textwidth>
                 <textoffsetx>45</textoffsetx>
-				<align>center</align>
                 <texturenofocus colordiffuse="$VAR[ThemePanelBgColor]" border="20,-3,20,-3">dialogs\default\bg.png</texturenofocus>
                 <texturefocus colordiffuse="$VAR[ThemePanelBgColor]" border="20,-3,20,-3">dialogs\default\bg.png</texturefocus>
                 <onclick>InhibitIdleShutdown(false)</onclick>
@@ -202,11 +191,10 @@
                 <description>Settings</description>
                 <width>510</width>
                 <height>60</height>
-                <textcolor>FF929292</textcolor>
-                <focusedcolor>FF9EFCFF</focusedcolor>
+                <textcolor>grey2</textcolor>
+                <focusedcolor>$VAR[FocusedMainMenuColor]</focusedcolor>
                 <textwidth>435</textwidth>
                 <textoffsetx>45</textoffsetx>
-				<align>center</align>
                 <texturenofocus colordiffuse="$VAR[ThemePanelBgColor]" border="20,-3,20,-3">dialogs\default\bg.png</texturenofocus>
                 <texturefocus colordiffuse="$VAR[ThemePanelBgColor]" border="20,-3,20,-3">dialogs\default\bg.png</texturefocus>
                 <onclick>Dialog.Close(all,true)</onclick>
@@ -218,11 +206,10 @@
                 <description>Skin Settings</description>
                 <width>510</width>
                 <height>60</height>
-                <textcolor>FF929292</textcolor>
-                <focusedcolor>FF9EFCFF</focusedcolor>
+                <textcolor>grey2</textcolor>
+                <focusedcolor>$VAR[FocusedMainMenuColor]</focusedcolor>
                 <textwidth>435</textwidth>
                 <textoffsetx>45</textoffsetx>
-				<align>center</align>
                 <texturenofocus colordiffuse="$VAR[ThemePanelBgColor]" border="20,-3,20,-3">dialogs\default\bg.png</texturenofocus>
                 <texturefocus colordiffuse="$VAR[ThemePanelBgColor]" border="20,-3,20,-3">dialogs\default\bg.png</texturefocus>
                 <onclick>Dialog.Close(all,true)</onclick>
@@ -234,11 +221,10 @@
                 <description>Favorites</description>
                 <width>510</width>
                 <height>60</height>
-                <textcolor>FF929292</textcolor>
-                <focusedcolor>FF9EFCFF</focusedcolor>
+                <textcolor>grey2</textcolor>
+                <focusedcolor>$VAR[FocusedMainMenuColor]</focusedcolor>
                 <textwidth>435</textwidth>
                 <textoffsetx>45</textoffsetx>
-				<align>center</align>
                 <texturenofocus colordiffuse="$VAR[ThemePanelBgColor]" border="20,-3,20,-3">dialogs\default\bg.png</texturenofocus>
                 <texturefocus colordiffuse="$VAR[ThemePanelBgColor]" border="20,-3,20,-3">dialogs\default\bg.png</texturefocus>
                 <onclick>ActivateWindow(favourites)</onclick>
@@ -249,11 +235,10 @@
                 <description>Favorites</description>
                 <width>510</width>
                 <height>60</height>
-                <textcolor>FF929292</textcolor>
-                <focusedcolor>FF9EFCFF</focusedcolor>
+                <textcolor>grey2</textcolor>
+                <focusedcolor>$VAR[FocusedMainMenuColor]</focusedcolor>
                 <textwidth>435</textwidth>
                 <textoffsetx>45</textoffsetx>
-				<align>center</align>
                 <texturenofocus colordiffuse="$VAR[ThemePanelBgColor]" border="20,-3,20,-3">dialogs\default\bg.png</texturenofocus>
                 <texturefocus colordiffuse="$VAR[ThemePanelBgColor]" border="20,-3,20,-3">dialogs\default\bg.png</texturefocus>
                 <font>font14</font>
@@ -266,11 +251,10 @@
                 <description>Reload Skin button</description>
                 <width>510</width>
                 <height>60</height>
-                <textcolor>FF929292</textcolor>
-                <focusedcolor>FF9EFCFF</focusedcolor>
+                <textcolor>grey2</textcolor>
+                <focusedcolor>$VAR[FocusedMainMenuColor]</focusedcolor>
                 <textwidth>435</textwidth>
                 <textoffsetx>45</textoffsetx>
-				<align>center</align>
                 <texturenofocus colordiffuse="$VAR[ThemePanelBgColor]" border="20,-3,20,-3">dialogs\default\bg.png</texturenofocus>
                 <texturefocus colordiffuse="$VAR[ThemePanelBgColor]" border="20,-3,20,-3">dialogs\default\bg.png</texturefocus>
                 <onclick>Dialog.Close(all,true)</onclick>
@@ -282,12 +266,11 @@
                 <description>Reload Skin button</description>
                 <width>510</width>
                 <height>60</height>
-                <textcolor>FF929292</textcolor>
-                <focusedcolor>FF9EFCFF</focusedcolor>
+                <textcolor>grey2</textcolor>
+                <focusedcolor>$VAR[FocusedMainMenuColor]</focusedcolor>
                 <textwidth>435</textwidth>
                 <textoffsetx>45</textoffsetx>
                 <font>font14</font>
-				<align>center</align>
                 <texturenofocus colordiffuse="$VAR[ThemePanelBgColor]" border="20,-3,20,-3">dialogs\default\bg.png</texturenofocus>
                 <texturefocus colordiffuse="$VAR[ThemePanelBgColor]" border="20,-3,20,-3">dialogs\default\bg.png</texturefocus>
                 <onclick>Dialog.Close(all,true)</onclick>

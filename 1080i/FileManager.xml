@@ -71,7 +71,7 @@
                         <height>60</height>
                         <texture colordiffuse="$VAR[HighlightBarColor]" border="5">listselect_fo.png</texture>
                         <visible>Control.HasFocus(20)</visible>
-                        <!-- <include>VisibleFadeAnimation</include> -->
+                        <include>VisibleFadeAnimation</include>
                     </control>
                     <control type="label">
                         <width>821</width>
@@ -164,7 +164,7 @@
                         <height>60</height>
                         <texture colordiffuse="$VAR[HighlightBarColor]" border="5">listselect_fo.png</texture>
                         <visible>Control.HasFocus(21)</visible>
-                        <!-- <include>VisibleFadeAnimation</include> -->
+                        <include>VisibleFadeAnimation</include>
                     </control>
                     <control type="label">
                         <width>821</width>
@@ -196,7 +196,7 @@
         <include>Topbar</include>
         <control type="group">
             <visible>!Skin.HasSetting(Disable.TopBar) + !Window.IsActive(volumebar)</visible>
-            <!-- <include>VisibleFadeAnimation</include> -->
+            <include>VisibleFadeAnimation</include>
             <animation effect="slide" start="0,-90" end="0,0" delay="800" time="0" condition="Window.Previous(Home)">WindowOpen</animation>
             <animation effect="slide" end="0,-90" start="0,0" time="0" condition="Window.Next(Home)">WindowClose</animation>
             <control type="grouplist">
@@ -206,7 +206,7 @@
                 <align>center</align>
                 <itemgap>5</itemgap>
                 <visible>Control.HasFocus(20) + !String.IsEqual(Container(20).NumItems,0)</visible>
-                <!-- <include>VisibleFadeAnimation</include> -->
+                <include>VisibleFadeAnimation</include>
                 <control type="label">
                     <width>auto</width>
                     <height>90</height>
@@ -249,7 +249,7 @@
                 <align>center</align>
                 <itemgap>5</itemgap>
                 <visible>Control.HasFocus(21) + !String.IsEqual(Container(21).NumItems,0)</visible>
-                <!-- <include>VisibleFadeAnimation</include> -->
+                <include>VisibleFadeAnimation</include>
                 <control type="label">
                     <width>auto</width>
                     <height>90</height>

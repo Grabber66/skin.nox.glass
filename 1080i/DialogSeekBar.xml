@@ -36,7 +36,7 @@
                         <width>110%</width>
                         <height>135</height>
                         <left>-25</left>
-                        <texture border="40" colordiffuse="FFff0000">dialogs/default/bg.png</texture>
+                        <texture border="40" colordiffuse="$VAR[ThemePanelColor]">dialogs/default/bg.png</texture>
                     </control>
                 </control>
                 <control type="image">
@@ -184,7 +184,7 @@
             <height>150</height>
             <itemgap>10</itemgap>
             <orientation>horizontal</orientation>
-            <!-- <include>VisibleFadeAnimation</include> -->
+            <include>VisibleFadeAnimation</include>
             <visible>Player.Forwarding | Player.Rewinding</visible>
             <usecontrolcoords>true</usecontrolcoords>
             <control type="image">

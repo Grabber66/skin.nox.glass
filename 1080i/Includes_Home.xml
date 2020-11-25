@@ -65,10 +65,32 @@
 				<include>skinshortcuts-submenu</include>
 			</content>
 		</control>
-		<control type="group" id="1">
-			<top>-1040</top>
+		<control type="button">
+			<left>15</left>
+			<top>8</top>
+			<width>30</width>
+			<height>25</height>
+			<texturefocus flipx="true" colordiffuse="red">arrow_submenu.png</texturefocus>
+			<texturenofocus flipx="true">arrow_submenu.png</texturenofocus>
+			<visible>Container(9010).HasPrevious</visible>
+			<onclick>Control.Move(9010,-1)</onclick>
+		</control>
+		<control type="button">
+			<left>1888</left>
+			<top>8</top>
+			<width>30</width>
+			<height>25</height>
+			<texturefocus colordiffuse="red">arrow_submenu.png</texturefocus>
+			<texturenofocus>arrow_submenu.png</texturenofocus>
+			<visible>Container(9010).HasNext</visible>
+			<onclick>Control.Move(9010,1)</onclick>
+		</control>
+	</include>
+	<include name="HorizontalMenuSystemBars">
+	    <control type="group" id="1">
+			<top>0</top>
 			<visible>String.IsEqual(Container(9000).ListItem.Property(path),ActivateWindow(Weather)) + !Skin.HasSetting(centermainmenu) + !Control.HasFocus(801113) + !Control.HasFocus(801114) + !Control.HasFocus(801112) + Skin.HasSetting(Enable.MyWeather)</visible>
-			<visible>String.IsEmpty(Window.Property(Daily.IsFetched)) + Weather.IsFetched + !String.IsEmpty(Weather.Plugin)</visible>
+			<visible>!Player.HasMedia + String.IsEmpty(Window.Property(Daily.IsFetched)) + Weather.IsFetched + !String.IsEmpty(Weather.Plugin)</visible>
 			<include condition="!String.IsEmpty(Skin.String(Widget.Trans)) + [!Skin.HasSetting(DisableWidgerBackround) | String.IsEmpty(Skin.String(Widget.Trans)]">HomeWidgetFade</include>
 			<control type="image">
 				<top>-38</top>
@@ -257,28 +279,6 @@
 				</control>
 			</control>
 		</control>
-		<control type="button">
-			<left>15</left>
-			<top>8</top>
-			<width>30</width>
-			<height>25</height>
-			<texturefocus flipx="true" colordiffuse="red">arrow_submenu.png</texturefocus>
-			<texturenofocus flipx="true">arrow_submenu.png</texturenofocus>
-			<visible>Container(9010).HasPrevious</visible>
-			<onclick>Control.Move(9010,-1)</onclick>
-		</control>
-		<control type="button">
-			<left>1888</left>
-			<top>8</top>
-			<width>30</width>
-			<height>25</height>
-			<texturefocus colordiffuse="red">arrow_submenu.png</texturefocus>
-			<texturenofocus>arrow_submenu.png</texturenofocus>
-			<visible>Container(9010).HasNext</visible>
-			<onclick>Control.Move(9010,1)</onclick>
-		</control>
-	</include>
-	<include name="HorizontalMenuSystemBars">
 		<control type="group">
 			<top>445</top>
 			<control type="group">
@@ -933,7 +933,7 @@
 				<align>center</align>
 				<label>$INFO[ListItem.Label]</label>
 				<visible>Control.HasFocus(9000)</visible>
-				<!-- <include>VisibleFadeAnimation</include> -->
+				<include>VisibleFadeAnimation</include>
 			</control>
 		</focusedlayout>
 		<itemlayout height="100" width="640" condition="String.IsEqual(Skin.String(MainMenu.Layout),3)">
@@ -965,7 +965,7 @@
 				<align>center</align>
 				<label>[B][I]$INFO[ListItem.Label][/I][/B]</label>
 				<visible>Control.HasFocus(9000)</visible>
-				<!-- <include>VisibleFadeAnimation</include> -->
+				<include>VisibleFadeAnimation</include>
 			</control>
 		</focusedlayout>
 		<!-- prawa lewa strona ikony-->
@@ -1032,7 +1032,7 @@
 			<control type="group">
 				<!-- focused -->
 				<visible>Control.HasFocus(9000)</visible>
-				<!-- <include>VisibleFadeAnimation</include> -->
+				<include>VisibleFadeAnimation</include>
 				<control type="image">
 					<left>88</left>
 					<top>-3</top>
@@ -1109,7 +1109,7 @@
 				<align>center</align>
 				<label>$INFO[ListItem.Label]</label>
 				<visible>Control.HasFocus(9000)</visible>
-				<!-- <include>VisibleFadeAnimation</include> -->
+				<include>VisibleFadeAnimation</include>
 			</control>
 		</focusedlayout>
 		<content>
@@ -1176,7 +1176,7 @@
 				<align>right</align>
 				<label>$INFO[ListItem.Label]</label>
 				<visible>Control.HasFocus(9000)</visible>
-				<!-- <include>VisibleFadeAnimation</include> -->
+				<include>VisibleFadeAnimation</include>
 			</control>
 		</focusedlayout>
 		<content>
@@ -1253,7 +1253,7 @@
 		<!-- Video Info -->
 		<control type="group">
 			<visible>Player.HasVideo + !Window.IsActive(script-globalsearch.xml)</visible>
-			<!-- <include>VisibleFadeAnimation</include> -->
+			<include>VisibleFadeAnimation</include>
 			<animation effect="slide" tween="cubic" time="0" start="0,1080" end="0,0" condition="Skin.HasSetting(centermainmenu) + !String.IsEqual(Skin.String(MainMenu.Layout),vertical)">WindowOpen</animation>
 			<animation effect="slide" tween="cubic" time="0" end="0,1080" start="0,0" condition="Skin.HasSetting(centermainmenu) + !String.IsEqual(Skin.String(MainMenu.Layout),vertical)">WindowClose</animation>
 			<animation effect="slide" tween="cubic" time="0" start="0,-1080" end="0,0" condition="!Skin.HasSetting(centermainmenu) | String.IsEqual(Skin.String(MainMenu.Layout),vertical)">WindowOpen</animation>
@@ -1551,7 +1551,7 @@
 			<visible>!Window.Next(musicplaylist) + !Window.Next(visualisation)</visible>
 			<control type="group">
 				<visible>Player.HasAudio + !Window.IsActive(script-globalsearch.xml)</visible>
-				<!-- <include>VisibleFadeAnimation</include> -->
+				<include>VisibleFadeAnimation</include>
 				<animation effect="slide" tween="cubic" time="0" start="0,1080" end="0,0" condition="Skin.HasSetting(centermainmenu) + !String.IsEqual(Skin.String(MainMenu.Layout),vertical)">WindowOpen</animation>
 				<animation effect="slide" tween="cubic" time="0" end="0,1080" start="0,0" condition="Skin.HasSetting(centermainmenu) + !String.IsEqual(Skin.String(MainMenu.Layout),vertical)">WindowClose</animation>
 				<animation effect="slide" tween="cubic" time="0" start="0,-1080" end="0,0" condition="!Skin.HasSetting(centermainmenu) | String.IsEqual(Skin.String(MainMenu.Layout),vertical)">WindowOpen</animation>
@@ -2143,7 +2143,7 @@
 			<textoffsety>5</textoffsety>
 			<label>$VAR[FanartTitleVar]</label>
 			<texturenofocus border="30,0,30,30">text_shadow.png</texturenofocus>
-			<!-- <include>VisibleFadeAnimation</include> -->
+			<include>VisibleFadeAnimation</include>
 			<include>WindowOpenCloseAnimation</include>
 			<animation effect="fade" time="600">WindowOpen</animation>
 			<animation effect="fade" time="600">WindowClose</animation>

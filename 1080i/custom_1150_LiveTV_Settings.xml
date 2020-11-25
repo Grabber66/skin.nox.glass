@@ -87,12 +87,11 @@
                         <onclick>ActivateWindow(1129)</onclick>
                     </control>
                     <control type="button" id="3002">
-					    <width>963</width>
                         <label>$LOCALIZE[32006]</label>
                         <label2>[COLOR $VAR[ThemeLabelColor]]$VAR[PVRGenreColorsLabelVar][/COLOR]</label2>
                         <onclick>Skin.ToggleSetting(Enable.PVRGenreColors)</onclick>
                         <onclick>Skin.ToggleSetting(Enable.PVRGenreColorMyMods)</onclick>
-						<include condition="Window.IsActive(tvguide)">ReloadWindowOnClick</include>
+                        <width>963</width>
                     </control>
                     <!-- INFOBAR SETTINGS -->
                     <control type="label" id="201">
