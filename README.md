@@ -65,7 +65,7 @@ zmiana kolorów tapet lub ich przyciemnianie rozjaśnianie,ustawienia 2 rodzaje 
 
 **Player Video Info:**
 ![test image size](https://github.com/BlackGlassSkin/Pic.Info/blob/master/videoinfo.png?raw=true)
-**Ukończone +/- 80%**
+
 "# skin.nox.glass" 
 "# skin.nox.glass" 
 "# skin.nox.glass" 
