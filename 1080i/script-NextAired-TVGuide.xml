@@ -76,7 +76,7 @@
                         <height>81</height>
                         <texture colordiffuse="$VAR[HighlightBarColor]" border="4">listselect_fo.png</texture>
                         <visible>Control.HasFocus(9000)</visible>
-                        <!-- <include>VisibleFadeAnimation</include> -->
+                        <include>VisibleFadeAnimation</include>
                     </control>
                     <control type="group">
                         <visible>!String.IsEqual(System.Date(ddd),ListItem.Property(day))</visible>

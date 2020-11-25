@@ -115,7 +115,7 @@
                 <font>font45caps_title</font>
                 <align>center</align>
                 <label>$LOCALIZE[284]</label>
-                <!-- <include>VisibleFadeAnimation</include> -->
+                <include>VisibleFadeAnimation</include>
             </control>
             <control type="group">
                 <left>438</left>

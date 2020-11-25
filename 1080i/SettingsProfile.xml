@@ -49,7 +49,7 @@
                         <height>90</height>
                         <texture colordiffuse="$VAR[HighlightBarColor]" border="4">listselect_fo.png</texture>
                         <visible>Control.HasFocus(2)</visible>
-                        <!-- <include>VisibleFadeAnimation</include> -->
+                        <include>VisibleFadeAnimation</include>
                     </control>
                     <control type="image">
                         <left>5</left>

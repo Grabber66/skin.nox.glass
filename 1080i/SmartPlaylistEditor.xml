@@ -10,7 +10,7 @@
     <controls>
         <control type="group">
             <visible>!Window.IsVisible(smartplaylistrule)</visible>
-            <!-- <include>VisibleFadeAnimation</include> -->
+            <include>VisibleFadeAnimation</include>
             <control type="image">
                 <width>1522</width>
                 <height>720</height>
@@ -101,7 +101,7 @@
                             <width>828</width>
                             <height>60</height>
                             <texture colordiffuse="$VAR[HighlightBarColor]" border="4">listselect_fo.png</texture>
-                            <!-- <include>VisibleFadeAnimation</include> -->
+                            <include>VisibleFadeAnimation</include>
                         </control>
                         <control type="label">
                             <width>828</width>

@@ -74,7 +74,7 @@
                     <top>515</top>
                     <width>650</width>
                     <height>270</height>
-                    <!-- <include>VisibleFadeAnimation</include> -->
+                    <include>VisibleFadeAnimation</include>
                     <control type="image">
                         <left>17</left>
                         <top>-35</top>
@@ -293,7 +293,7 @@
                 <height>155</height>
                 <aspectratio aligny="bottom">keep</aspectratio>
                 <texture background="true">$VAR[ArtworkLogoVar]</texture>
-                <!-- <include>VisibleFadeAnimation</include> -->
+                <include>VisibleFadeAnimation</include>
                 <visible>Skin.HasSetting(rightlistlogoartist)</visible>
             </control>
             <control type="group">
@@ -444,7 +444,7 @@
                 <focusedlayout height="90" width="806" condition="!Skin.HasSetting(RightList.AlternateMusic) + [Container.Content(genres) | Container.Content(artists) | Container.Content(files)]">
                     <control type="image">
                         <include>RightListFocusedHighLightContent</include>
-                        <!-- <include>VisibleFadeAnimation</include> -->
+                        <include>VisibleFadeAnimation</include>
                     </control>
                     <include content="RightListItemLayout">
                         <param name="width">810</param>
@@ -459,7 +459,7 @@
                 <focusedlayout height="90" width="806" condition="!Skin.HasSetting(RightList.AlternateMusic) + [Container.Content(genres) | Container.Content(albums) | Container.Content(songs)]">
                     <control type="image">
                         <include>RightListFocusedHighLightContent</include>
-                        <!-- <include>VisibleFadeAnimation</include> -->
+                        <include>VisibleFadeAnimation</include>
                     </control>
                     <include content="RightListFocusedLayout">
                         <param name="width">810</param>
@@ -550,7 +550,7 @@
         <focusedlayout height="82" width="806" condition="[!Skin.HasSetting(rightlistalternate) + Container.Content(movies)]">
             <control type="image">
                 <include>RightListFocusedHighLightContent</include>
-                <!-- <include>VisibleFadeAnimation</include> -->
+                <include>VisibleFadeAnimation</include>
             </control>
             <include content="RightListFocusedLayout">
                 <param name="width">700</param>
@@ -559,7 +559,7 @@
         <focusedlayout height="82" width="806" condition="[Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + !Skin.HasSetting(rightlistalternatetv)">
             <control type="image">
                 <include>RightListFocusedHighLightContent</include>
-                <!-- <include>VisibleFadeAnimation</include> -->
+                <include>VisibleFadeAnimation</include>
             </control>
             <control type="group">
                 <animation effect="slide" end="70" time="0" condition="Container.Content(episodes)">Conditional</animation>

@@ -172,7 +172,7 @@
                         <height>231</height>
                         <texture colordiffuse="$VAR[HighlightBarColor]">listselect_fo.png</texture>
                         <visible>Control.HasFocus(507)</visible>
-                        <!-- <include>VisibleFadeAnimation</include> -->
+                        <include>VisibleFadeAnimation</include>
                         <visible>[Container.Content(albums) + !Skin.HasSetting(alternatebiglistlayout)] | [Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes) | Container.Content(artists)]</visible>
                     </control>
                     <control type="image">

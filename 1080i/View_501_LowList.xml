@@ -113,7 +113,7 @@
                 <animation effect="slide" end="0,-203.375" time="120" condition="!Skin.HasSetting(nohighlist)">Conditional</animation>
                 <control type="grouplist">
                     <visible>Container.Content(episodes)</visible>
-                    <!-- <include>VisibleFadeAnimation</include> -->
+                    <include>VisibleFadeAnimation</include>
                     <control type="button">
                         <label>[COLOR $VAR[ThemeLabelColor]]$LOCALIZE[31324]:[/COLOR][CR]$INFO[ListItem.Premiered]</label>
                         <width>650</width>
@@ -152,7 +152,7 @@
                 </control>
                 <control type="grouplist">
                     <visible>Container.Content(tvshows) | Container.Content(seasons)</visible>
-                    <!-- <include>VisibleFadeAnimation</include> -->
+                    <include>VisibleFadeAnimation</include>
                     <control type="button">
                         <label>[COLOR $VAR[ThemeLabelColor]]$LOCALIZE[31010]:[/COLOR][CR]$INFO[Window(Home).Property(NextAired.NextDate),,: ] $INFO[Window(Home).Property(NextAired.NextNumber),, - ]$INFO[Window(Home).Property(NextAired.NextTitle)]</label>
                         <width>650</width>
@@ -180,7 +180,7 @@
                 </control>
                 <control type="grouplist">
                     <visible>Container.Content(movies) + !ListItem.IsCollection + ![Skin.HasSetting(nohighlist) + Skin.HasSetting(Enable.LowListMoviePlot)]</visible>
-                    <!-- <include>VisibleFadeAnimation</include> -->
+                    <include>VisibleFadeAnimation</include>
                     <control type="button">
                         <label>[COLOR $VAR[ThemeLabelColor]]$LOCALIZE[20339]:[/COLOR][CR]$INFO[ListItem.Director]</label>
                         <width>650</width>
@@ -213,7 +213,7 @@
                 <width>650</width>
                 <height>360</height>
                 <visible>ListItem.IsCollection + Skin.HasSetting(nohighlist) + !Skin.HasSetting(Enable.LowListMoviePlot)</visible>
-                <!-- <include>VisibleFadeAnimation</include> -->
+                <include>VisibleFadeAnimation</include>
                 <control type="button">
                     <label>[COLOR $VAR[ThemeLabelColor]]$LOCALIZE[20342]:[/COLOR][CR]$INFO[Container(4500).NumItems]</label>
                     <width>650</width>
@@ -249,7 +249,7 @@
                 <width>650</width>
                 <height>270</height>
                 <visible>ListItem.IsCollection + !Skin.HasSetting(nohighlist)</visible>
-                <!-- <include>VisibleFadeAnimation</include> -->
+                <include>VisibleFadeAnimation</include>
                 <control type="button">
                     <label>[COLOR $VAR[ThemeLabelColor]]$LOCALIZE[20342]:[/COLOR][CR]$INFO[Container(4500).NumItems]</label>
                     <width>650</width>
@@ -280,7 +280,7 @@
                 <width>650</width>
                 <height>270</height>
                 <visible>Window.IsActive(programs) + !Skin.HasSetting(nohighlist)</visible>
-                <!-- <include>VisibleFadeAnimation</include> -->
+                <include>VisibleFadeAnimation</include>
                 <control type="button">
                     <label>[COLOR $VAR[ThemeLabelColor]]$LOCALIZE[31043]:[/COLOR][CR]$INFO[ListItem.Writer]</label>
                     <width>650</width>
@@ -306,7 +306,7 @@
                 <width>650</width>
                 <height>270</height>
                 <visible>Window.IsActive(programs) + Skin.HasSetting(nohighlist)</visible>
-                <!-- <include>VisibleFadeAnimation</include> -->
+                <include>VisibleFadeAnimation</include>
                 <control type="button">
                     <label>[COLOR $VAR[ThemeLabelColor]]$LOCALIZE[31043]:[/COLOR][CR]$INFO[ListItem.Writer]</label>
                     <width>650</width>
@@ -344,7 +344,7 @@
                 <left>1270</left>
                 <top>733</top>
                 <visible>![Container.Content(tvshows) | Container.Content(seasons) | ListItem.IsCollection] + !Skin.HasSetting(nohighlist)</visible>
-                <!-- <include>VisibleFadeAnimation</include> -->
+                <include>VisibleFadeAnimation</include>
                 <control type="textbox" id="70">
                     <label>$VAR[VideoPlotVar]</label>
                     <left>15</left>
@@ -376,7 +376,7 @@
                 <left>1270</left>
                 <top>733</top>
                 <visible>ListItem.IsCollection + System.HasAddon(script.skin.info.service) + !Skin.HasSetting(nohighlist)</visible>
-                <!-- <include>VisibleFadeAnimation</include> -->
+                <include>VisibleFadeAnimation</include>
                 <control type="textbox" id="70">
                     <label>$VAR[VideoPlotVar]</label>
                     <left>15</left>
@@ -408,7 +408,7 @@
                 <left>1270</left>
                 <top>713</top>
                 <visible>ListItem.IsCollection + !System.HasAddon(script.skin.info.service) + !Skin.HasSetting(nohighlist)</visible>
-                <!-- <include>VisibleFadeAnimation</include> -->
+                <include>VisibleFadeAnimation</include>
                 <control type="textbox" id="70">
                     <label>$VAR[VideoPlotVar]</label>
                     <left>15</left>
@@ -439,7 +439,7 @@
                 <left>1270</left>
                 <top>738</top>
                 <visible>[Container.Content(tvshows) | Container.Content(seasons)] + !Skin.HasSetting(nohighlist)</visible>
-                <!-- <include>VisibleFadeAnimation</include> -->
+                <include>VisibleFadeAnimation</include>
                 <control type="textbox" id="70">
                     <label>$VAR[VideoPlotVar]</label>
                     <left>15</left>
@@ -471,7 +471,7 @@
                 <left>1270</left>
                 <top>822</top>
                 <visible>Skin.HasSetting(nohighlist) + [Container.Content(tvshows) | Container.Content(seasons)]</visible>
-                <!-- <include>VisibleFadeAnimation</include> -->
+                <include>VisibleFadeAnimation</include>
                 <control type="textbox" id="70">
                     <label>$VAR[VideoPlotVar]</label>
                     <left>15</left>
@@ -502,7 +502,7 @@
                 <left>1270</left>
                 <top>733</top>
                 <visible>Container.Content(movies) + !ListItem.IsCollection + Skin.HasSetting(nohighlist) + Skin.HasSetting(Enable.LowListMoviePlot)</visible>
-                <!-- <include>VisibleFadeAnimation</include> -->
+                <include>VisibleFadeAnimation</include>
                 <control type="textbox" id="70">
                     <label>$VAR[VideoPlotVar]</label>
                     <left>15</left>
@@ -533,7 +533,7 @@
                 <left>1270</left>
                 <top>733</top>
                 <visible>[ListItem.IsCollection + Skin.HasSetting(nohighlist) + Skin.HasSetting(Enable.LowListMoviePlot)]</visible>
-                <!-- <include>VisibleFadeAnimation</include> -->
+                <include>VisibleFadeAnimation</include>
                 <control type="textbox" id="70">
                     <label>$VAR[VideoPlotVar]</label>
                     <left>15</left>
@@ -566,7 +566,7 @@
                 <width>1840</width>
                 <control type="group">
                     <visible>!ListItem.IsCollection</visible>
-                    <!-- <include>VisibleFadeAnimation</include> -->
+                    <include>VisibleFadeAnimation</include>
                     <control type="image">
                         <left>13.5</left>
                         <colordiffuse>grey2</colordiffuse>
@@ -601,7 +601,7 @@
                         <top>-6</top>
                         <width>162.5</width>
                         <visible>!String.IsEmpty(ListItem.Property(TotalSeasons)) + Container.Content(tvshows)</visible>
-                        <!-- <include>VisibleFadeAnimation</include> -->
+                        <include>VisibleFadeAnimation</include>
                         <control type="label">
                             <top>2</top>
                             <width>162.5</width>
@@ -627,7 +627,7 @@
                         <left>162.5</left>
                         <width>162.5</width>
                         <visible>[Container.Content(tvshows) | Container.Content(seasons)] + !String.IsEmpty(ListItem.Property(TotalEpisodes))</visible>
-                        <!-- <include>VisibleFadeAnimation</include> -->
+                        <include>VisibleFadeAnimation</include>
                         <animation effect="slide" end="-162.5" condition="Container.Content(seasons)">Conditional</animation>
                         <control type="label">
                             <top>2</top>
@@ -654,7 +654,7 @@
                         <left>162.5</left>
                         <width>162.5</width>
                         <visible>Container.Content(seasons)</visible>
-                        <!-- <include>VisibleFadeAnimation</include> -->
+                        <include>VisibleFadeAnimation</include>
                         <control type="label">
                             <width>165</width>
                             <top>2</top>
@@ -772,7 +772,7 @@
                         <height>68</height>
                         <texture colordiffuse="$VAR[HighlightBarColor]" border="4">listselect_fo.png</texture>
                         <visible>Control.HasFocus(501)</visible>
-                        <!-- <include>VisibleFadeAnimation</include> -->
+                        <include>VisibleFadeAnimation</include>
                     </control>
                     <control type="label">
                         <left>15</left>
@@ -894,7 +894,7 @@
                         <height>68</height>
                         <texture colordiffuse="$VAR[HighlightBarColor]" border="4">listselect_fo.png</texture>
                         <visible>Control.HasFocus(501)</visible>
-                        <!-- <include>VisibleFadeAnimation</include> -->
+                        <include>VisibleFadeAnimation</include>
                     </control>
                     <control type="label">
                         <left>15</left>
@@ -1008,7 +1008,7 @@
                         <height>68</height>
                         <texture colordiffuse="$VAR[HighlightBarColor]" border="4">listselect_fo.png</texture>
                         <visible>Control.HasFocus(501)</visible>
-                        <!-- <include>VisibleFadeAnimation</include> -->
+                        <include>VisibleFadeAnimation</include>
                     </control>
                     <control type="label">
                         <left>15</left>
@@ -1091,7 +1091,7 @@
                         <height>68</height>
                         <texture colordiffuse="$VAR[HighlightBarColor]" border="4">listselect_fo.png</texture>
                         <visible>Control.HasFocus(501)</visible>
-                        <!-- <include>VisibleFadeAnimation</include> -->
+                        <include>VisibleFadeAnimation</include>
                     </control>
                     <control type="label">
                         <width>730</width>
@@ -1347,7 +1347,7 @@
                         <height>68</height>
                         <texture colordiffuse="$VAR[HighlightBarColor]" border="4">listselect_fo.png</texture>
                         <visible>Control.HasFocus(501)</visible>
-                        <!-- <include>VisibleFadeAnimation</include> -->
+                        <include>VisibleFadeAnimation</include>
                     </control>
                     <control type="label">
                         <left>15</left>
@@ -1432,7 +1432,7 @@
                         <height>68</height>
                         <texture colordiffuse="$VAR[HighlightBarColor]" border="4">listselect_fo.png</texture>
                         <visible>Control.HasFocus(501)</visible>
-                        <!-- <include>VisibleFadeAnimation</include> -->
+                        <include>VisibleFadeAnimation</include>
                     </control>
                     <control type="label">
                         <left>15</left>
@@ -1498,7 +1498,7 @@
                         <height>68</height>
                         <texture colordiffuse="$VAR[HighlightBarColor]" border="4">listselect_fo.png</texture>
                         <visible>Control.HasFocus(501)</visible>
-                        <!-- <include>VisibleFadeAnimation</include> -->
+                        <include>VisibleFadeAnimation</include>
                     </control>
                     <control type="label">
                         <left>15</left>
@@ -1617,7 +1617,7 @@
                 <left>1270</left>
                 <top>733</top>
                 <visible>!Skin.HasSetting(nohighlistgame)</visible>
-                <!-- <include>VisibleFadeAnimation</include> -->
+                <include>VisibleFadeAnimation</include>
                 <control type="textbox" id="70">
                     <label>$VAR[VideoPlotVar]</label>
                     <left>15</left>
@@ -1687,7 +1687,7 @@
                         <height>68</height>
                         <texture colordiffuse="$VAR[HighlightBarColor]" border="4">listselect_fo.png</texture>
                         <visible>Control.HasFocus(501)</visible>
-                        <!-- <include>VisibleFadeAnimation</include> -->
+                        <include>VisibleFadeAnimation</include>
                     </control>
                     <control type="label">
                         <left>15</left>

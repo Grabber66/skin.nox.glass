@@ -63,7 +63,7 @@
                     <top>280</top>
                     <width>1000</width>
                     <height>270</height>
-                    <!-- <include>VisibleFadeAnimation</include> -->
+                    <include>VisibleFadeAnimation</include>
                     <visible>!Skin.HasSetting(Disable.MyFlixInfo)</visible>
                     <animation effect="slide" start="0" end="0,-40" condition="Container.Content(tvshows) | Container.Content(episodes)">Conditional</animation>
                     <control type="group">

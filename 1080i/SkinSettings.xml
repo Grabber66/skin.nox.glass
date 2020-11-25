@@ -234,12 +234,12 @@
                             <selected>!Skin.HasSetting(Enable.VisibleSubmenu)</selected>
                             <visible>!String.IsEqual(Skin.String(MainMenu.Layout),vertical) + !system.getbool(lookandfeel.enablerssfeeds)</visible>
                         </control>
-                        <control type="radiobutton" id="10101">
+                        <!--<control type="radiobutton" id="10101">
                             <include>SettingsButtonCommonValues</include>
                             <label>$LOCALIZE[32052]</label>
                             <onclick>Skin.ToggleSetting(Enable.TRripleMemu)</onclick>
                             <selected>!Skin.HasSetting(Enable.TRripleMemu)</selected>
-                        </control>
+                        </control>-->
                         <control type="radiobutton" id="1019">
                             <include>SettingsButtonCommonValues</include>
                             <label>$LOCALIZE[31158]</label>

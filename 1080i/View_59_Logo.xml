@@ -193,7 +193,7 @@
                 <control type="group">
                     <top>845</top>
                     <visible>[Container.Content(tvshows) + !Skin.HasSetting(noextendedinfotvshows)]</visible>
-                    <!-- <include>VisibleFadeAnimation</include> -->
+                    <include>VisibleFadeAnimation</include>
                     <control type="label">
                         <left>350</left>
                         <width>1220</width>

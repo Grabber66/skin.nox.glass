@@ -309,7 +309,7 @@
                         <ondown>9000</ondown>
                         <orientation>horizontal</orientation>
                         <visible allowhiddenfocus="true">!Control.HasFocus(64)</visible>
-                        <!-- <include>VisibleFadeAnimation</include> -->
+                        <include>VisibleFadeAnimation</include>
                         <scrolltime tween="quadratic" easing="out">200</scrolltime>
                         <itemlayout height="72" width="1198">
                             <control type="label">
@@ -327,7 +327,7 @@
                                 <height>62</height>
                                 <texture colordiffuse="$VAR[HighlightBarColor]" border="4">listselect_fo.png</texture>
                                 <visible>Control.HasFocus(3000)</visible>
-                                <!-- <include>VisibleFadeAnimation</include> -->
+                                <include>VisibleFadeAnimation</include>
                             </control>
                             <control type="label">
                                 <width>1198</width>
@@ -384,7 +384,7 @@
                     <control type="group">
                         <left>3</left>
                         <top>66</top>
-                        <!-- <include>VisibleFadeAnimation</include> -->
+                        <include>VisibleFadeAnimation</include>
                         <visible>Control.HasFocus(64)</visible>
                         <control type="label">
                             <top>32</top>

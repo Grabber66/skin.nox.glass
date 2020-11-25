@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol condition="Skin.HasSetting(Enable.StartupIntro)">10</defaultcontrol>
-	<onload condition="!Skin.HasSetting(Enable.TRripleMemu)">Skin.SetString(MainMenu.Layout,3)</onload>
     <onload condition="!System.HasAddon(script.tv.show.next.aired)">Skin.SetBool(Disable.NextAired)</onload>
     <!--<onload>AlarmClock(Take a Screenshot,ReloadSkin,00:00:30,silent)</onload>
     <onload>RunScript(special://skin/resources/lib/weather.py)</onload> -->
@@ -23,7 +22,7 @@
     <onload condition="System.HasAddon(script.skin.info.service)">RunScript(script.skin.info.service)</onload>
     <onload condition="System.HasAddon(script.colorbox)">RunScript(script.colorbox,daemon=True)</onload>
     <onload condition="System.HasAddon(script.artistslideshow)">RunScript(script.artistslideshow,daemon=True)</onload>
-    <onload condition="!Skin.HasSetting(Enable.TRripleMemu)">Skin.SetString(MainMenu.Layout,3)</onload>
+    <!-- <onload condition="!Skin.HasSetting(Enable.TRripleMemu)">Skin.SetString(MainMenu.Layout,3)</onload> -->
     <onload>RunScript(special://skin/resources/lib/update.py)</onload>
     <onload>RunScript(special://skin/resources/lib/publicip.py)</onload>
     <!-- Intro -->
