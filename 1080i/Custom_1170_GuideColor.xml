@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Foundation -->
+<window type="dialog" id="1170">
+    <defaultcontrol always="true">9000</defaultcontrol>
+    <controls>
+        <control type="group">
+            <control type="image">
+                <centerleft>50%</centerleft>
+                <top>70</top>
+                <width>1000</width>
+                <height>590</height>
+                <texture colordiffuse="$VAR[ThemePanelBgColor]" border="40">dialogs/default/bg.png</texture>
+            </control>
+            <control type="image">
+                <centerleft>50%</centerleft>
+                <top>137</top>
+                <width>960</width>
+                <height>2.4</height>
+                <texture colordiffuse="$VAR[ThemePanelColor]" border="1">new_pvr/osd_line_white.png</texture>
+            </control>
+            <control type="label">
+                <top>-177</top>
+                <centerleft>87%</centerleft>
+                <width>1780</width>
+                <height>580</height>
+                <label>$LOCALIZE[32007]</label>
+            </control>
+            <control type="grouplist" id="9000">
+                <onright>61</onright>
+                <description>Control Area</description>
+                <top>150</top>
+                <left>470</left>
+                <width>1780</width>
+                <height>580</height>
+                <itemgap>0</itemgap>
+                <pagecontrol>61</pagecontrol>
+                <orientation>vertical</orientation>
+                <usecontrolcoords>true</usecontrolcoords>
+                <control type="radiobutton" id="9001">
+                    <label>[B]»» $LOCALIZE[32008][/B]</label>
+                    <onclick>RunScript(script.skin.helper.colorpicker,skinstring=PVRGenreColorMyModsFilm)</onclick>
+                    <include content="CustomColorRadioButtonMy">
+                        <param name="ColorStringVar">$VAR[PVRGenreColorMyModsFilm]</param>
+                    </include>
+                </control>
+                <control type="radiobutton" id="9002">
+                    <label>[B]»» $LOCALIZE[32009][/B]</label>
+                    <onclick>RunScript(script.skin.helper.colorpicker,skinstring=PVRGenreColorMyModsSerial)</onclick>
+                    <include content="CustomColorRadioButtonMy">
+                        <param name="ColorStringVar">$VAR[PVRGenreColorMyModsSerial]</param>
+                    </include>
+                </control>
+                <control type="radiobutton" id="9003">
+                    <label>[B]»» $LOCALIZE[32010][/B]</label>
+                    <onclick>RunScript(script.skin.helper.colorpicker,skinstring=PVRGenreColorMyModsProgram)</onclick>
+                    <include content="CustomColorRadioButtonMy">
+                        <param name="ColorStringVar">$VAR[PVRGenreColorMyModsProgram]</param>
+                    </include>
+                </control>
+                <control type="radiobutton" id="9004">
+                    <label>[B]»» $LOCALIZE[32011][/B]</label>
+                    <onclick>RunScript(script.skin.helper.colorpicker,skinstring=PVRGenreColorMyModsSport)</onclick>
+                    <include content="CustomColorRadioButtonMy">
+                        <param name="ColorStringVar">$VAR[PVRGenreColorMyModsSport]</param>
+                    </include>
+                </control>
+                <control type="radiobutton" id="9005">
+                    <label>[B]»» $LOCALIZE[32012][/B]</label>
+                    <onclick>RunScript(script.skin.helper.colorpicker,skinstring=PVRGenreColorMyModsMuzyka)</onclick>
+                    <include content="CustomColorRadioButtonMy">
+                        <param name="ColorStringVar">$VAR[PVRGenreColorMyModsMuzyka]</param>
+                    </include>
+                </control>
+                <control type="radiobutton" id="9006">
+                    <label>[B]»» $LOCALIZE[32013][/B]</label>
+                    <onclick>RunScript(script.skin.helper.colorpicker,skinstring=PVRGenreColorMyModsWiadomosci)</onclick>
+                    <include content="CustomColorRadioButtonMy">
+                        <param name="ColorStringVar">$VAR[PVRGenreColorMyModsWiadomosci]</param>
+                    </include>
+                </control>
+                <control type="radiobutton" id="9007">
+                    <label>[B]»» $LOCALIZE[32014][/B]</label>
+                    <onclick>RunScript(script.skin.helper.colorpicker,skinstring=PVRGenreColorMyModsReligia)</onclick>
+                    <include content="CustomColorRadioButtonMy">
+                        <param name="ColorStringVar">$VAR[PVRGenreColorMyModsReligia]</param>
+                    </include>
+                </control>
+                <control type="radiobutton" id="9008">
+                    <label>[B]»» $LOCALIZE[32015][/B]</label>
+                    <onclick>RunScript(script.skin.helper.colorpicker,skinstring=PVRGenreColorMyModsKids)</onclick>
+                    <include content="CustomColorRadioButtonMy">
+                        <param name="ColorStringVar">$VAR[PVRGenreColorMyModsKids]</param>
+                    </include>
+                </control>
+                <control type="radiobutton" id="9010">
+                    <label>[B]»» $LOCALIZE[32016][/B]</label>
+                    <onclick>RunScript(script.skin.helper.colorpicker,skinstring=PVRGenreColorMyModsReality)</onclick>
+                    <include content="CustomColorRadioButtonMy">
+                        <param name="ColorStringVar">$VAR[PVRGenreColorMyModsReality]</param>
+                    </include>
+                </control>
+                <control type="radiobutton" id="9009">
+                    <label>[B]»» $LOCALIZE[32017][/B]</label>
+                    <textcolor>grey</textcolor>
+                    <focusedcolor>FFD2691E</focusedcolor>
+                    <onclick>Skin.Reset(PVRGenreColorMyModsFilm)</onclick>
+                    <onclick>Skin.Reset(PVRGenreColorMyModsSerial)</onclick>
+                    <onclick>Skin.Reset(PVRGenreColorMyModsProgram)</onclick>
+                    <onclick>Skin.Reset(PVRGenreColorMyModsSport)</onclick>
+                    <onclick>Skin.Reset(PVRGenreColorMyModsMuzyka)</onclick>
+                    <onclick>Skin.Reset(PVRGenreColorMyModsWiadomosci)</onclick>
+                    <onclick>Skin.Reset(PVRGenreColorMyModsReligia)</onclick>
+                    <onclick>Skin.Reset(PVRGenreColorMyModsKids)</onclick>
+                    <onclick>Skin.Reset(PVRGenreColorMyModsReality)</onclick>
+                    <include>CustomColorRadioButtonWarn</include>
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>
