@@ -3,7 +3,7 @@ A modded version of [Aeon Nox 5]
 
 **Branches guide:**
  - **master:** Kodi v19 Codename Matrix
- - **leia:** Kodi v18 Codename Leia
+ 
 
 *[Nox Glass: BlackGlassSkin]*
 
