@@ -8,66 +8,20 @@ A modded version of [Aeon Nox 5]
 *[Nox Glass: BlackGlassSkin]*
 
 
-![test image size](https://github.com/BondasH/Pic.Info/blob/master/skin.nox.glass.png?raw=true)
-![test image size](https://github.com/BondasH/Pic.Info/blob/master/1.png?raw=true)
-![test image size](https://github.com/BlackGlassSkin/Pic.Info/blob/master/home.png?raw=true)
+<p align="center">
+<img src="https://i.ibb.co/wQ6LJy7/skin-nox-glass.png">
+<img src="https://i.ibb.co/0c36XK7/screenshot00024.png">
+<img src="https://i.ibb.co/R95Pg97/screenshot00025.png">
+</p>
 
 
-**Zmiany i Modyfikacje:**
 
-**Masa ustawiń dla użytkownika kolory paneli,epg,przycisków audio & video,paski posępu,kilka pasków menu do wyboru,
-zmiana kolorów tapet lub ich przyciemnianie rozjaśnianie,ustawienia 2 rodzaje ikon kolor + czarno białe **
-
-**Zmienione Wszystkie Okna + Dialogi :**
-
-**Okna + Dialogi Przed Modyfikacją:**
-![test image size](https://github.com/BondasH/Pic.Info/blob/master/pandialodiold.png?raw=true)
-
-**Okna + Dialogi Po Modyfikacji:**
-![test image size](https://github.com/BondasH/Pic.Info/blob/master/pandialoginew.png?raw=true)
-
-
-**Ustawienia Przed Modyfikacją:**
-![test image size](https://github.com/BondasH/Pic.Info/blob/master/setold.png?raw=true)
-
-**Ustawienia Po Modyfikacji:**
-![test image size](https://github.com/BondasH/Pic.Info/blob/master/setnew.png?raw=true)
-
-
-**Pogoda Przed Modyfikacją:**
-![test image size](https://github.com/BondasH/Pic.Info/blob/master/oldweat.png?raw=true)
-
-**Pogoda Po Modyfikacji:**
-![test image size](https://github.com/BondasH/Pic.Info/blob/master/newweat.png?raw=true)
-
-**Pogoda Nowy Widget:**
-![test image size](https://raw.githubusercontent.com/BlackGlassSkin/Pic.Info/master/pogodawidget.png?raw=true)
-
-**Live TV EPG Przed Modyfikacją:**
-![test image size](https://github.com/BondasH/Pic.Info/blob/master/epgold.png?raw=true)
-
-**Live TV EPG Po Modyfikacji:**
-![test image size](https://github.com/BondasH/Pic.Info/blob/master/guide.png?raw=true)
-
-**PVR Info Przed Modyfikacją:**
-![test image size](https://github.com/BlackGlassSkin/Pic.Info/blob/master/pvrold.png?raw=true?raw=true)
-
-**PVR Info Po Modyfikacji:**
-
-![test image size](https://github.com/BlackGlassSkin/Pic.Info/blob/master/pvrnew2.png?raw=true?raw=true)
-**PVR Info Po Modyfikacji:**
-![test image size](https://raw.githubusercontent.com/BlackGlassSkin/Pic.Info/master/playertv.png?raw=true?raw=true)
-![test image size](https://github.com/BlackGlassSkin/Pic.Info/blob/master/pvrplayerinfo.png?raw=true)
-
-![test image size](https://github.com/BlackGlassSkin/Pic.Info/blob/master/pvr1.png?raw=true)
-![test image size](https://github.com/BlackGlassSkin/Pic.Info/blob/master/pvr2.png?raw=true)
-![test image size](https://github.com/BlackGlassSkin/Pic.Info/blob/master/pvrwall.png?raw=true)
-
-**Player Video Info:**
-![test image size](https://github.com/BlackGlassSkin/Pic.Info/blob/master/videoinfo.png?raw=true)
-
-"# skin.nox.glass" 
-"# skin.nox.glass" 
-"# skin.nox.glass" 
-"# skin.nox.glass" 
-"# skin.nox.glass" 
+* - [x] __PVR Artwork TV & Radio__
+* - [x] __Modded Guide__
+* - [x] __Modded Views__
+* - [x] __Modded APPEARANCE__
+* - [x] __Modded Music Visualisation__
+* - [x] __Modded Weather vidget__
+* - [x] __Modded viget's__
+* - [x] __Modded Home menu__
+* - [x] __Lots of changes from the original that I don't remember anymore__
