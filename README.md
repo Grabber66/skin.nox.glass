@@ -10,8 +10,12 @@ A modded version of [Aeon Nox 5]
 
 <p align="center">
 <img src="https://i.ibb.co/wQ6LJy7/skin-nox-glass.png">
+ 
 <img src="https://i.ibb.co/0c36XK7/screenshot00024.png">
 <img src="https://i.ibb.co/R95Pg97/screenshot00025.png">
+
+<img src="https://i.ibb.co/nRtmJM5/screenshot00026.png">
+<img src="https://i.ibb.co/Dr2Nngg/screenshot00027.png">
 </p>
 
 
@@ -25,3 +29,4 @@ A modded version of [Aeon Nox 5]
 * - [x] __Modded widgets__
 * - [x] __Modded Home menu__
 * - [x] __Lots of changes from the original that I don't remember anymore__
+* - [x] __visualizations, removed or reduced speeds (much faster)__
