@@ -375,7 +375,35 @@
 						<label>$VAR[MusicPlayerAtistTitleVar]</label>
 						<scroll>true</scroll>
 						<scrollsuffix>  -  </scrollsuffix>
-						<visible>String.IsEmpty(PlayerArtworkLogoVar) + Skin.HasSetting(Disable.MusicVizLogo)</visible>
+						<visible>String.IsEmpty(PlayerArtworkLogoVar) + Skin.HasSetting(Disable.MusicVizLogo) + ![Pvr.IsPlayingRadio | Player.IsInternetStream]</visible>
+						<!-- <include>VisibleFadeAnimation</include> -->
+					</control>
+					<control type="label">
+						<left>760</left>
+						<top>90</top>
+						<width>900</width>
+						<height>80</height>
+						<font>font_musicviz</font>
+						<shadowcolor>black</shadowcolor>
+						<label>$INFO[MusicPlayer.Title]<!--$INFO[MusicPlayer.Artist]-->
+						</label>
+						<scroll>true</scroll>
+						<scrollsuffix>  -  </scrollsuffix>
+						<visible>String.IsEmpty(PlayerArtworkLogoVar) + Skin.HasSetting(Disable.MusicVizLogo) + [Pvr.IsPlayingRadio | Player.IsInternetStream]</visible>
+						<!-- <include>VisibleFadeAnimation</include> -->
+					</control>
+					<control type="label">
+						<left>760</left>
+						<top>90</top>
+						<width>900</width>
+						<height>80</height>
+						<font>font_musicviz</font>
+						<textcolor>00FF0000</textcolor>
+						<label> - $VAR[MusicPlayerAtistTitleVar]<!--$INFO[MusicPlayer.Artist]-->
+						</label>
+						<scroll>true</scroll>
+						<scrollsuffix>  -  </scrollsuffix>
+						<visible>String.IsEmpty(PlayerArtworkLogoVar) + Skin.HasSetting(Disable.MusicVizLogo) + [Pvr.IsPlayingRadio | Player.IsInternetStream]</visible>
 						<!-- <include>VisibleFadeAnimation</include> -->
 					</control>
 					<control type="image">
@@ -408,6 +436,63 @@
 					</control>
 				</control>
 				<control type="grouplist">
+					<top>950</top>
+					<left>624</left>
+					<centerleft>555</centerleft>
+					<width>auto</width>
+					<orientation>horizontal</orientation>
+					<usecontrolcoords>true</usecontrolcoords>
+					<bordersize>-900</bordersize>
+					<control type="image">
+						<width>80</width>
+						<include>MediaFlagValues</include>
+						<texture>$VAR[MediaFlagsPathVar]/audiocodec/$VAR[PlayerAudioCodecFlagVar]</texture>
+					</control>
+					<control type="image">
+						<width>80</width>
+						<include>MediaFlagValues</include>
+						<texture>$VAR[MediaFlagsPathVar]/audiochannels/$INFO[VideoPlayer.AudioChannels,,.png]</texture>
+					</control>
+					<control type="label">
+						<width>80</width>
+						<top>-2</top>
+						<include>MediaFlagValues</include>
+						<label>[B]$INFO[MusicPlayer.BitRate,  ,:][/B]</label>
+					</control>
+					<control type="image">
+						<width>80</width>
+						<left>-8</left>
+						<include>MediaFlagValues</include>
+						<texture>flags/colored/bitrate/128.png</texture>
+						<visible>!String.IsEmpty(MusicPlayer.BitRate)</visible>
+					</control>
+					<control type="label">
+						<width>80</width>
+						<top>-2</top>
+						<include>MediaFlagValues</include>
+						<label>[B]$INFO[MusicPlayer.BitsPerSample,  | ,:][/B]</label>
+					</control>
+					<control type="image">
+						<width>40</width>
+						<include>MediaFlagValues</include>
+						<texture>flags/colored/bitrate/32.png</texture>
+						<visible>!String.IsEmpty(MusicPlayer.BitsPerSample)</visible>
+					</control>
+					<control type="label">
+						<width>112</width>
+						<top>-2</top>
+						<include>MediaFlagValues</include>
+						<label>[B]$INFO[MusicPlayer.Samplerate,  | ,: ][/B]</label>
+					</control>
+					<control type="image">
+						<width>56</width>
+						<left>-8</left>
+						<include>MediaFlagValues</include>
+						<texture>flags/colored/bitrate/khz.png</texture>
+						<visible>!String.IsEmpty(MusicPlayer.Samplerate)</visible>
+					</control>
+				</control>
+				<control type="grouplist">
 					<left>630</left>
 					<top>810</top>
 					<height>200</height>
@@ -419,6 +504,17 @@
 						<textcolor>$VAR[ThemeHomeLabelColor]</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>$INFO[MusicPlayer.TrackNumber,,. ]$VAR[PlayerAllTitlesVar]</label>
+						<visible>![Pvr.IsPlayingRadio | Player.IsInternetStream]</visible>
+						<scroll>true</scroll>
+					</control>
+					<control type="label">
+						<width>950</width>
+						<height>40</height>
+						<font>font48</font>
+						<textcolor>$VAR[ThemeHomeLabelColor]</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$INFO[MusicPlayer.TrackNumber,,. ] $INFO[MusicPlayer.Title] - $VAR[MusicPlayerAtistTitleVar]</label>
+						<visible>[Pvr.IsPlayingRadio | Player.IsInternetStream]</visible>
 						<scroll>true</scroll>
 					</control>
 					<control type="label">
@@ -427,7 +523,7 @@
 						<font>font15</font>
 						<textcolor>white2</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>$VAR[PlayerAllAlbumsVar]$INFO[musicplayer.discnumber, - $LOCALIZE[427]:]</label>
+						<label>$INFO[MusicPlayer.Album]$INFO[musicplayer.discnumber, - $LOCALIZE[427]:]</label>
 					</control>
 					<control type="label">
 						<height>50</height>
@@ -446,15 +542,15 @@
 						<label>$VAR[PlayerAllGenresVar,$LOCALIZE[515]: [COLOR white2],[/COLOR]]</label>
 						<visible>!String.IsEmpty(PlayerAllGenresVar)</visible>
 					</control>
-					<control type="label">
+					<!--<control type="label">
 						<width>950</width>
 						<height>40</height>
 						<font>font15</font>
 						<textcolor>$VAR[ThemeHomeLabelColor]</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<label>$VAR[PlayerAllGenresVar,$LOCALIZE[515]: [COLOR white2],[/COLOR]]  $VAR[MusicPlayerCodecVar]$INFO[MusicPlayer.Bitrate,[COLOR white] · , [/COLOR]kbps[COLOR white] ·[/COLOR]]$INFO[MusicPlayer.BitsPerSample,[COLOR white] ,[/COLOR] bit[COLOR white] ·[/COLOR]]$INFO[MusicPlayer.Samplerate,[COLOR white] ,[/COLOR] kHz]</label>
-						<visible>[Pvr.IsPlayingRadio | Player.IsInternetStream]</visible>
-					</control>
+						<visible>![Pvr.IsPlayingRadio | Player.IsInternetStream]</visible>
+					</control> -->
 					<control type="image">
 						<width>400</width>
 						<height>45</height>
