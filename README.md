@@ -21,7 +21,7 @@ A modded version of [Aeon Nox 5]
 * - [x] __Modded Views__
 * - [x] __Modded APPEARANCE__
 * - [x] __Modded Music Visualisation__
-* - [x] __Modded Weather vidget__
-* - [x] __Modded viget's__
+* - [x] __Modded Weather widget__
+* - [x] __Modded widgets__
 * - [x] __Modded Home menu__
 * - [x] __Lots of changes from the original that I don't remember anymore__
