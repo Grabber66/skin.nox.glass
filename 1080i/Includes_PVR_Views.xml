@@ -946,13 +946,13 @@
 							<visible>!Player.HasVideo</visible>
 						</control>
 						<control type="image">
-							<width>780</width>
+							<width>750</width>
 							<height>405</height>
 							<texture diffuse="homewidgets/cases/glass/landscape_e.png">$INFO[ListItem.EPGEventIcon]</texture>
 							<visible>!Player.HasVideo + !Skin.HasSetting(Enable.PVRThumbs)</visible>
 						</control>
 						<control type="image">
-							<width>780</width>
+							<width>750</width>
 							<height>405</height>
 							<texture diffuse="homewidgets/cases/glass/landscape_e.png">$VAR[NoPlayerPVRThumbVar]</texture>
 							<aspectratio scalediffuse="false" align="center" aligny="top">stretch</aspectratio>
@@ -962,16 +962,16 @@
 							<visible>Player.HasVideo</visible>
 							<!-- <include>VisibleFadeAnimation</include> -->
 							<control type="image">
-								<width>780</width>
+								<width>750</width>
 								<height>405</height>
 								<texture>black.png</texture>
 							</control>
 							<control type="videowindow">
-								<width>780</width>
+								<width>750</width>
 								<height>405</height>
 							</control>
 							<control type="image">
-								<width>780</width>
+								<width>750</width>
 								<height>60</height>
 								<texture colordiffuse="B3FFFFFF">back.png</texture>
 							</control>
