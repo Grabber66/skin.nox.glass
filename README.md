@@ -11,11 +11,20 @@ A modded version of [Aeon Nox 5]
 <p align="center">
 <img src="https://i.ibb.co/wQ6LJy7/skin-nox-glass.png">
  
-<img src="https://i.ibb.co/0c36XK7/screenshot00024.png">
-<img src="https://i.ibb.co/R95Pg97/screenshot00025.png">
+<img src="https://i.ibb.co/PtBDnk8/2.png">
+<img src="https://i.ibb.co/Vx6yn1F/3.png">
 
-<img src="https://i.ibb.co/nRtmJM5/screenshot00026.png">
-<img src="https://i.ibb.co/Dr2Nngg/screenshot00027.png">
+<img src="https://i.ibb.co/qRbcmQk/5.png">
+<img src="https://i.ibb.co/Z1nNgjT/6.png">
+
+<img src="https://i.ibb.co/Bg1sKnb/4.png">
+<img src="https://i.ibb.co/t4XWS0c/7.png">
+<img src="https://i.ibb.co/MMX0cPZ/8.png">
+
+
+<img src="https://i.ibb.co/xf63gkc/10.png">
+<img src="https://i.ibb.co/KyN3HTg/9.png">
+<img src="https://i.ibb.co/J5Nh81r/1.png">
 </p>
 
 
