@@ -25,6 +25,7 @@ A modded version of [Aeon Nox 5]
 <img src="https://i.ibb.co/xf63gkc/10.png">
 <img src="https://i.ibb.co/KyN3HTg/9.png">
 <img src="https://i.ibb.co/J5Nh81r/1.png">
+<img src="https://i.ibb.co/DV8YLzw/2020-12-11-18h41-22.png">
 </p>
 
 
@@ -37,5 +38,6 @@ A modded version of [Aeon Nox 5]
 * - [x] __Modded Weather widget__
 * - [x] __Modded widgets__
 * - [x] __Modded Home menu__
+* - [x] __New DialogPVRChannelGuide__
 * - [x] __Lots of changes from the original that I don't remember anymore__
 * - [x] __visualizations, removed or reduced speeds (much faster)__
