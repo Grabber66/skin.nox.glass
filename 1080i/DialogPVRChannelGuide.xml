@@ -59,10 +59,10 @@
 				<height>150</height>
 				<font>font16</font>
 				<textcolor>$VAR[ThemeLabelColor]</textcolor>
-				<label>[B]$INFO[ListItem.Label, ][/B]</label>
+				<label>[B]$INFO[Container(11).ListItem.Label, ][/B]</label>
 				<scroll>true</scroll>
 				<scrollspeed>20</scrollspeed>
-				<animation effect="slide" start="0,0" end="0,-20" time="10" condition="!String.IsEmpty(ListItem.EpisodeName)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,-20" time="10" condition="!String.IsEmpty(Container(11).ListItem.EpisodeName)">Conditional</animation>
 			</control>
 			<control type="label">
 				<left>1240</left>
@@ -70,7 +70,7 @@
 				<width>650</width>
 				<height>150</height>
 				<font>font16</font>
-				<label>[COLOR FFB8B8B8]$INFO[ListItem.EpisodeName, [B]•[/B] ][/COLOR]</label>
+				<label>[COLOR FFB8B8B8]$INFO[Container(11).ListItem.EpisodeName, [B]•[/B] ][/COLOR]</label>
 				<scroll>true</scroll>
 				<scrollspeed>20</scrollspeed>
 			</control>
@@ -81,6 +81,15 @@
 				<width>120</width>
 				<height>70</height>
 				<texture background="true" diffuse="homewidgets/cases/glass/landscape_e.png" fallback="homewidgets/DefaultMovies_landscape.png">$INFO[VideoPlayer.Cover]</texture>
+			</control>
+			<control type="image">
+				<visible>!Skin.HasSetting(Enable.DefaulLogo)</visible>
+				<left>1112</left>
+				<top>490</top>
+				<width>120</width>
+				<height>70</height>
+				<texture background="true" diffuse="homewidgets/cases/glass/landscape_e.png" fallback="homewidgets/DefaultMovies_landscape.png">$INFO[ListItem.Icon]</texture>
+				<visible>String.IsEmpty(VideoPlayer.Cover)</visible>
 			</control>
 			<control type="image">
 				<visible>Skin.HasSetting(Enable.DefaulLogo)</visible>
@@ -136,7 +145,7 @@
 				</control>
 				<control type="image">
 					<top>2</top>
-					<width>55</width>
+					<width>50</width>
 					<include>MediaFlagValues</include>
 					<texture fallback="flags/language/default/-.png">$INFO[VideoPlayer.AudioLanguage,flags/language/default/,.png]</texture>
 					<aspectratio>keep</aspectratio>
@@ -170,6 +179,7 @@
 					<!-- <visible>PVR.IsRecordingPlayingChannel | PVR.IsPlayingActiveRecording</visible> -->
 				</control>
 				<animation effect="slide" end="60,0" easing="inout" condition="!PVR.IsRecordingPlayingChannel">Conditional</animation>
+				<visible>!String.IsEmpty(VideoPlayer.Title)</visible>
 			</control>
 			<control type="fixedlist" id="11">
 				<top>3</top>
