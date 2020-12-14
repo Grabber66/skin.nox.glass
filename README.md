@@ -14,7 +14,7 @@ and from repository install ***script.skin.helper.service*** after install skin
 
 weather icon , weather fanart code ***"reduced package size"***
 
-http://kim.cherrytv.webd.pl/MultiRepo/All/repository.Kim.Multi/repository.Kim.Multi-2.1.5.zip
+http://kim.cherrytv.webd.pl/MultiRepo/All/repository.Kim.Multi/repository.Kim.Multi-2.1.6.zip
 
 
 
