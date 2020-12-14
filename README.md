@@ -1,11 +1,21 @@
 # Nox Glass: BlackGlassSkin
-A modded version of [Aeon Nox 5]
+A modded version of [Aeon Nox 5 & SiLVO]
 
 **Branches guide:**
  - **master:** Kodi v19 Codename Matrix
  
 
-*[Nox Glass: BlackGlassSkin]*
+# Before Installing skin.nox.glass
+* Install this repository
+
+https://github.com/AnonTester/kodi-repo/tree/master/repository.anontester
+
+and from repository install ***script.skin.helper.service*** after install skin
+
+weather icon , weather fanart code ***"reduced package size"***
+
+http://kim.cherrytv.webd.pl/MultiRepo/All/repository.Kim.Multi/repository.Kim.Multi-2.1.5.zip
+
 
 
 <p align="center">
