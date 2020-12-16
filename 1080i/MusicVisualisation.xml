@@ -231,7 +231,7 @@
 			<animation effect="slide" end="575" time="300" condition="String.IsEmpty(Skin.String(MusicVizLayout)) + [Skin.HasSetting(HideMusicVizAlbum) | Skin.HasSetting(HideMusicVizCD)] + Skin.HasSetting(SlideMusicLabelsRight)">Conditional</animation>
 			<animation effect="slide" end="-575" time="300" condition="String.IsEqual(Skin.String(MusicVizLayout),1) + [Skin.HasSetting(HideMusicVizAlbum) | Skin.HasSetting(HideMusicVizCD)] + Skin.HasSetting(SlideMusicLabelsLeft)">Conditional</animation>
 			<visible>Player.ShowInfo + !Skin.HasSetting(Disable.MusicVizTime) + !Window.IsVisible(musicosd)</visible>
-			<!-- <include>VisibleFadeAnimation</include> -->
+			<include>VisibleFadeAnimation</include>
 			<control type="image">
 				<left>610</left>
 				<width>700</width>
@@ -314,7 +314,7 @@
 			<visible>[Pvr.IsPlayingRadio | Player.IsInternetStream]</visible>
 			<top>520</top>
 			<include>WindowOpenCloseAnimation</include>
-			<!-- <include>VisibleFadeAnimation</include> -->
+			<include>VisibleFadeAnimation</include>
 			<visible>[Player.ShowInfo | Window.IsActive(MusicOSD)] + ![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList)]</visible>
 			<!-- Test Layout -->
 			<control type="group">
@@ -369,11 +369,11 @@
 						<height>80</height>
 						<font>font_musicviz</font>
 						<shadowcolor>black</shadowcolor>
-						<label>$INFO[MusicPlayer.Artist]</label>
+						<label>$INFO[Window(Home).Property(SkinHelper.Player.Artist)]</label>
 						<scroll>true</scroll>
 						<scrollsuffix>  -  </scrollsuffix>
 						<visible>[!String.IsEmpty(PlayerArtworkLogoVar) + String.IsEmpty(Player.Art(artist.clearlogo)) + String.IsEmpty(Player.Art(clearlogo))] | Skin.HasSetting(Disable.MusicVizLogo)</visible>
-						<!-- <include>VisibleFadeAnimation</include> -->
+						<include>VisibleFadeAnimation</include>
 					</control>
 					<control type="image">
 						<left>-65</left>
@@ -524,11 +524,11 @@
 							<font>font_musicviz</font>
 							<align>right</align>
 							<shadowcolor>black</shadowcolor>
-							<label>$INFO[MusicPlayer.Artist]</label>
+							<label>$INFO[Window(Home).Property(SkinHelper.Player.Artist)]</label>
 							<scroll>true</scroll>
 							<scrollsuffix>  -  </scrollsuffix>
 							<visible>[!String.IsEmpty(Player.Art(PlayerArtworkLogoVar)) + String.IsEmpty(Player.Art(artist.clearlogo)) + String.IsEmpty(Player.Art(clearlogo))] | Skin.HasSetting(Disable.MusicVizLogo)</visible>
-							<!-- <include>VisibleFadeAnimation</include> -->
+							<include>VisibleFadeAnimation</include>
 						</control>
 						<control type="image">
 							<top>-150</top>
@@ -657,7 +657,7 @@
 						<top>150</top>
 						<animation effect="slide" end="-485,0" time="300" condition="Skin.HasSetting(HideMusicVizAlbum) + Skin.HasSetting(HideMusicVizCD) + Skin.HasSetting(SlideMusicLabelsLeft)">Conditional</animation>
 						<animation effect="slide" end="-205,0" time="300" condition="[Skin.HasSetting(HideMusicVizAlbum) | Skin.HasSetting(HideMusicVizCD)] + Skin.HasSetting(SlideMusicLabelsLeft)">Conditional</animation>
-						<!-- <include>VisibleFadeAnimation</include> -->
+						<include>VisibleFadeAnimation</include>
 						<control type="group">
 							<visible>!Skin.HasSetting(Disable.MusicPlayerNextTrack)</visible>
 							<control type="label">
@@ -667,11 +667,11 @@
 								<height>80</height>
 								<font>font_musicviz</font>
 								<shadowcolor>black</shadowcolor>
-								<label>$INFO[MusicPlayer.Artist]</label>
+								<label>$INFO[Window(Home).Property(SkinHelper.Player.Artist)]</label>
 								<scroll>true</scroll>
 								<scrollsuffix>  -  </scrollsuffix>
 								<visible>[!String.IsEmpty(Player.Art(PlayerArtworkLogoVar)) + String.IsEmpty(Player.Art(artist.clearlogo)) + String.IsEmpty(Player.Art(clearlogo))] | Skin.HasSetting(Disable.MusicVizLogo)</visible>
-								<!-- <include>VisibleFadeAnimation</include> -->
+								<include>VisibleFadeAnimation</include>
 							</control>
 							<control type="label">
 								<top>30</top>
@@ -813,11 +813,11 @@
 							<font>font_musicviz</font>
 							<align>center</align>
 							<textcolor>$VAR[ThemeLabelColor]</textcolor>
-							<label>$INFO[MusicPlayer.Artist]</label>
+							<label>$INFO[Window(Home).Property(SkinHelper.Player.Artist)]</label>
 							<scroll>true</scroll>
 							<scrollsuffix>  -  </scrollsuffix>
 							<visible>!String.IsEmpty(Player.Art(PlayerArtworkLogoVar)) | Skin.HasSetting(Disable.MusicVizLogo)</visible>
-							<!-- <include>VisibleFadeAnimation</include> -->
+							<include>VisibleFadeAnimation</include>
 						</control>
 						<control type="image">
 							<top>-120</top>
@@ -947,7 +947,7 @@
 						<animation effect="slide" end="-1090,0" time="0" condition="String.IsEqual(Skin.String(MusicVizLayout),1)">Conditional</animation>
 						<animation effect="slide" end="235,0" time="400" condition="String.IsEmpty(Skin.String(MusicVizLayout)) + Skin.HasSetting(HideMusicVizCD) + Skin.HasSetting(SlideMusicLabelsRight)">Conditional</animation>
 						<animation effect="slide" end="-235,0" time="400" condition="!Skin.HasSetting(HideMusicVizCD) + Skin.HasSetting(HideMusicVizAlbum) + String.IsEqual(Skin.String(MusicVizLayout),1) + Skin.HasSetting(SlideMusicLabelsLeft)">Conditional</animation>
-						<!-- <include>VisibleFadeAnimation</include> -->
+						<include>VisibleFadeAnimation</include>
 						<control type="image">
 							<left>220</left>
 							<top>3</top>
@@ -1005,7 +1005,7 @@
 						<top>-133</top>
 						<animation effect="rotate" end="-2" center="auto" condition="true">Conditional</animation>
 						<animation effect="rotatey" end="45" center="auto" condition="true">Conditional</animation>
-						<!-- <include>VisibleFadeAnimation</include> -->
+						<include>VisibleFadeAnimation</include>
 						<control type="group">
 							<control type="image">
 								<top>78</top>
@@ -1071,7 +1071,7 @@
 			<visible>![Pvr.IsPlayingRadio | Player.IsInternetStream]</visible>
 			<top>520</top>
 			<include>WindowOpenCloseAnimation</include>
-			<!-- <include>VisibleFadeAnimation</include> -->
+			<include>VisibleFadeAnimation</include>
 			<visible>[Player.ShowInfo | Window.IsActive(MusicOSD)] + ![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList)]</visible>
 			<!-- Test Layout -->
 			<control type="group">
@@ -1121,7 +1121,7 @@
 						<scroll>true</scroll>
 						<scrollsuffix>  -  </scrollsuffix>
 						<visible>[!String.IsEmpty(PlayerArtworkLogoVar) + String.IsEmpty(Player.Art(artist.clearlogo)) + String.IsEmpty(Player.Art(clearlogo))] | Skin.HasSetting(Disable.MusicVizLogo)</visible>
-						<!-- <include>VisibleFadeAnimation</include> -->
+						<include>VisibleFadeAnimation</include>
 					</control>
 					<control type="image">
 						<left>-65</left>
@@ -1295,7 +1295,7 @@
 							<scroll>true</scroll>
 							<scrollsuffix>  -  </scrollsuffix>
 							<visible>[!String.IsEmpty(Player.Art(PlayerArtworkLogoVar)) + String.IsEmpty(Player.Art(artist.clearlogo)) + String.IsEmpty(Player.Art(clearlogo))] | Skin.HasSetting(Disable.MusicVizLogo)</visible>
-							<!-- <include>VisibleFadeAnimation</include> -->
+							<include>VisibleFadeAnimation</include>
 						</control>
 						<control type="image">
 							<top>-120</top>
@@ -1417,7 +1417,7 @@
 						<top>150</top>
 						<animation effect="slide" end="-485,0" time="300" condition="Skin.HasSetting(HideMusicVizAlbum) + Skin.HasSetting(HideMusicVizCD) + Skin.HasSetting(SlideMusicLabelsLeft)">Conditional</animation>
 						<animation effect="slide" end="-205,0" time="300" condition="[Skin.HasSetting(HideMusicVizAlbum) | Skin.HasSetting(HideMusicVizCD)] + Skin.HasSetting(SlideMusicLabelsLeft)">Conditional</animation>
-						<!-- <include>VisibleFadeAnimation</include> -->
+						<include>VisibleFadeAnimation</include>
 						<control type="group">
 							<visible>!Skin.HasSetting(Disable.MusicPlayerNextTrack)</visible>
 							<control type="label">
@@ -1431,7 +1431,7 @@
 								<scroll>true</scroll>
 								<scrollsuffix>  -  </scrollsuffix>
 								<visible>[!String.IsEmpty(Player.Art(PlayerArtworkLogoVar)) + String.IsEmpty(Player.Art(artist.clearlogo)) + String.IsEmpty(Player.Art(clearlogo))] | Skin.HasSetting(Disable.MusicVizLogo)</visible>
-								<!-- <include>VisibleFadeAnimation</include> -->
+								<include>VisibleFadeAnimation</include>
 							</control>
 							<control type="label">
 								<left>475</left>
@@ -1524,7 +1524,7 @@
 								<scroll>true</scroll>
 								<scrollsuffix>  -  </scrollsuffix>
 								<visible>[!String.IsEmpty(Player.Art(PlayerArtworkLogoVar)) + String.IsEmpty(Player.Art(artist.clearlogo)) + String.IsEmpty(Player.Art(clearlogo))] | Skin.HasSetting(Disable.MusicVizLogo)</visible>
-								<!-- <include>VisibleFadeAnimation</include> -->
+								<include>VisibleFadeAnimation</include>
 							</control>
 							<control type="label">
 								<left>475</left>
@@ -1604,7 +1604,7 @@
 							<scroll>true</scroll>
 							<scrollsuffix>  -  </scrollsuffix>
 							<visible>[!String.IsEmpty(Player.Art(PlayerArtworkLogoVar)) + String.IsEmpty(Player.Art(artist.clearlogo)) + String.IsEmpty(Player.Art(clearlogo))] | Skin.HasSetting(Disable.MusicVizLogo)</visible>
-							<!-- <include>VisibleFadeAnimation</include> -->
+							<include>VisibleFadeAnimation</include>
 						</control>
 						<control type="image">
 							<top>-120</top>
@@ -1721,7 +1721,7 @@
 						<animation effect="slide" end="-1090,0" time="0" condition="String.IsEqual(Skin.String(MusicVizLayout),1)">Conditional</animation>
 						<animation effect="slide" end="235,0" time="400" condition="String.IsEmpty(Skin.String(MusicVizLayout)) + Skin.HasSetting(HideMusicVizCD) + Skin.HasSetting(SlideMusicLabelsRight)">Conditional</animation>
 						<animation effect="slide" end="-235,0" time="400" condition="!Skin.HasSetting(HideMusicVizCD) + Skin.HasSetting(HideMusicVizAlbum) + String.IsEqual(Skin.String(MusicVizLayout),1) + Skin.HasSetting(SlideMusicLabelsLeft)">Conditional</animation>
-						<!-- <include>VisibleFadeAnimation</include> -->
+						<include>VisibleFadeAnimation</include>
 						<control type="image">
 							<left>220</left>
 							<top>3</top>
@@ -1779,7 +1779,7 @@
 						<top>-133</top>
 						<animation effect="rotate" end="-2" center="auto" condition="true">Conditional</animation>
 						<animation effect="rotatey" end="45" center="auto" condition="true">Conditional</animation>
-						<!-- <include>VisibleFadeAnimation</include> -->
+						<include>VisibleFadeAnimation</include>
 						<control type="group">
 							<control type="image">
 								<top>78</top>
